@@ -1,0 +1,141 @@
+.video-tag {
+    position: relative;
+    width: 100% !important;
+    height: 28rem !important;
+    
+}
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.video-text, .banner-text{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    color: white;
+    font-weight: 800;
+}
+.banner-text-small{
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    color: white;
+    font-weight: 800; 
+}
+.ad-part{
+    position: relative;
+}
+.login-part{
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.signUp-form-field, .track-input{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    border-color: rgb(237, 28, 36);
+}
+.flag, .signUp-form-field{
+    padding-left: 12px;
+    padding-right: 4px;
+    display: flex;
+}
+.signUp-form-field > input {
+    font-size: 14px;
+    padding: 10px 6px 11px 12px;
+    font-size: 12px;
+    padding: 7px 4px 6px 12px;
+    border-width: 0px 0px 0px 1px;
+    flex: 1 1 0%;
+    color: rgb(44, 44, 44);
+    height: 50px;
+    border-left-style: solid;
+    border-left-color: rgb(221, 221, 221);
+}
+.signupBtn {
+    width: 90%;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(235, 33, 39);
+    border-radius: 5px;
+    border: 1px solid rgb(235, 33, 39);
+    padding: 10px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    word-spacing: 3px;
+    cursor: pointer;
+    margin: 3rem 0rem;
+}
+.or-section{
+    display: table;
+    margin: 16px 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    background: transparent;
+}
+.or-section::before, .or-section::after{
+    position: relative;
+    top: 50%;
+    display: table-cell;
+    width: 50%;
+    border-top: 1px solid #e8e8e8;
+    transform: translateY(50%);
+    content: '';
+}
+.track-button {
+    width: 20%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(235, 33, 39);
+    border-radius: 5px;
+    border: 1px solid rgb(235, 33, 39);
+    padding: 10px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.track-input{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    display: inline-flex;
+    width: 80%;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    border-color: rgb(237, 28, 36);
+    padding: 10px 8px;
+}
+
+.video-text{
+
+ font-family: "arial";
+ font-size: 3em;
+ width: 80%;
+ animation: animtext 4s steps(80, end); 
+  transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+@keyframes animtext { 
+ from {
+     width: 0;
+    transition: all 2s ease-in-out;
+ } 
+}

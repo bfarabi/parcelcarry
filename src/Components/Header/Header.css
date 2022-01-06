@@ -1,0 +1,26 @@
+/* img{
+    width: 80%;
+} */
+.languageBtn, .loginBtn, .callingBtn {
+    color: rgb(52, 152, 219);
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.languageBtn img {
+    max-width: 90%;
+    height: 26px;
+}
+.languageBtn p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    margin-top: 1rem;
+}
+.text {
+    font-weight: 500;
+    margin-bottom: 5px;
+}

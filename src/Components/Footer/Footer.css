@@ -1,0 +1,12 @@
+.footer-bg {
+    background-color: #f5f5f5;
+}
+.footer-colum img{
+width: 11rem;
+margin-bottom: 2rem;
+}
+.footer-colum span img {
+    width: 2rem;
+    margin: 4px;
+    padding: 0px;
+}
