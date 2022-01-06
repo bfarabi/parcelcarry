@@ -7,12 +7,14 @@ import Coverage from "../CoverageArea/Coverage";
 import Clients from "../Clients/Clients";
 import News from "../RedxNews/News";
 import Footer from "../Footer/Footer";
+import Header from './../Header/Header';
 
 
 
 const Home = () => {
   return (
     <div className="App" style={{width:'99vw'}} >
+    <Header></Header>
       <AdNSignUp></AdNSignUp>
       <Logos></Logos>
       <Service></Service>

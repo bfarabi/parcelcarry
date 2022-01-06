@@ -3,7 +3,7 @@ import './Logistics.css';
 
 const Logistics = () => {
     return (
-        <div>
+        <div className="w-100">
             <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
             আপনার লজিস্টিক পার্টনার হিসেবে PARCEL CARRY বেছে নিন
       </h1>

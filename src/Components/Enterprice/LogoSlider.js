@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogoSlider = () => {
     return (
-        <div>
+        <div className="w-100">
         <div className="row">
         <div
           id="carouselExampleControls"

@@ -13,16 +13,20 @@ import Home from "./Components/Home/Home";
 import Enterprice from './Components/Enterprice/Enterprice';
 import C2c from './Components/C2C/C2c';
 import Login from './Components/Login/Login';
+import MerchanHeader from './Components/MerchantHeader/MerchanHeader';
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
     <BrowserRouter >
-    <Header></Header>
+    
       <Routes>
       <Route path="/" element={<Home></Home>} />
       <Route path="/enterprise" element={<Enterprice></Enterprice>} />
       <Route path="/c2c" element={<C2c></C2c>} />
       <Route path="/login" element={<Login></Login>} />
+      <Route path="/mheader" element={<MerchanHeader></MerchanHeader>} />
+      <Route path="/dashboard" element={<Dashboard></Dashboard>} />
       
       
       </Routes>

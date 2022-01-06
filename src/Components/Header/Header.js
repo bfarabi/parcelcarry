@@ -5,7 +5,7 @@ import logo from "../../Images/Percel-Carry-logo.png";
 
 const Header = () => {
   return (
-    <div className="App border" style={{width:'100vw'}} >
+    <div className="App border w-100" >
       <nav class="navbar navbar-expand-lg navbar-light bg-white " >
         <div class="container-fluid">
           <Link class="navbar-brand mx-3" to='/'>
@@ -59,10 +59,7 @@ const Header = () => {
               </li>
               <li class="nav-item">
                 <div class="loginBtn p-2">
-                  <a  href="#">
-                    {" "}
-                    LOGIN
-                  </a>
+                  <Link class="btn btn-outline-danger mt-3 fw-bold" to="/login">LOGIN</Link>
                 </div>
               </li>
               <li class="nav-item">
