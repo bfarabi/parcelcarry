@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from './../Header/Header';
 
 const Login = () => {
@@ -29,9 +30,12 @@ const Login = () => {
               value=""
             />
           </div>
+          <Link to ="/dashboard">
           <button class="signupBtn" type="submit">
             Continue
           </button>
+          </Link>
+          
         </form>
         <p>
           By logging in you agree to our{" "}

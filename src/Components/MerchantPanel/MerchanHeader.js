@@ -28,7 +28,7 @@ const MerchanHeader = () => {
                 <Link
                   class="nav-link active text-danger fw-bold"
                   aria-current="page"
-                  to="/enterprise"
+                  to="/"
                 >
                   Track Parcel
                 </Link>
@@ -45,8 +45,8 @@ const MerchanHeader = () => {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active text" to="/parcel">
-                  Parcel
+                <Link class="nav-link active text" to="/parcels">
+                  Parcels
                 </Link>
               </li>
               <li class="nav-item">
@@ -61,7 +61,7 @@ const MerchanHeader = () => {
               </li>
               <li class="nav-item">
                 <div class="">
-                  <Link class="btn btn-outline-danger fw-bold" to="/">
+                  <Link class="btn btn-outline-danger fw-bold" to="/create">
                     Create Parcel
                   </Link>
                 </div>

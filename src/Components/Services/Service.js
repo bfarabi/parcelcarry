@@ -4,10 +4,13 @@ import SingleService from "./SingleService";
 
 const Service = () => {
   return (
-    <div>
+    <div class="row">
       <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
       সার্ভিস সমূহ
       </h1>
+      <SingleService></SingleService>
+      <SingleService></SingleService>
+      <SingleService></SingleService>
       <SingleService></SingleService>
       <SingleService></SingleService>
       <SingleService></SingleService>

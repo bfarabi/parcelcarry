@@ -94,7 +94,7 @@ const Courier = () => {
 
       {/* our delivery charge table */}
 
-      <div className="row App my-5">
+      <div className="row App my-5 w-100">
         <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
           ডেলিভারি চার্জ দেখুন
         </h1>
@@ -221,6 +221,7 @@ const Courier = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
