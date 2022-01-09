@@ -4,7 +4,7 @@ import SingleParcel from './SingleParcel';
 
 const Parcels = () => {
   return (
-    <div>
+    <div >
       <MerchanHeader></MerchanHeader>
       <div className=" p-3 w-100">
         <h3>Search by</h3>
@@ -168,12 +168,12 @@ const Parcels = () => {
         </div>
       </div>
 
-      <div className="row border-bottom w-100 h-25 ">
+      <div className="row justify-content-center table-responsive-md ">
         
-          <table class="table table-striped">
+        <table class="table table-hover ">
             
             <tbody>
-              <tr className="App " >
+              <tr className="App bg-light " >
                 <td><input className="form-check-input mx-2 p-2" type="checkbox" name="checkbox" id="" /></td>
                 <td>Create date</td>
                 <td>Pick up name </td>
@@ -185,12 +185,14 @@ const Parcels = () => {
               </tr>
               
             </tbody>
-          </table>
+          
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
+        </table>
+        
       </div>
     </div>
   );

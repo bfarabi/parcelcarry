@@ -104,7 +104,7 @@ const Payments = () => {
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <div className="row justify-content-center ">
+            <div className="row justify-content-center table-responsive-md ">
               
                 <table class="table ">
                   <tbody>
@@ -139,7 +139,7 @@ const Payments = () => {
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
           >
-            <div className="row justify-content-center ">
+            <div className="row justify-content-center table-responsive-md ">
               <div className="fullTable  ">
                 <table class="table table-striped">
                   <tbody>

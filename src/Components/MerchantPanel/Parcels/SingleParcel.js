@@ -3,7 +3,7 @@ import React from 'react';
 const SingleParcel = () => {
     return (
         <>
-            <table class="table ">
+            {/* <table class="table "> */}
             
             <tbody>
               <tr className="App align-middle  " >
@@ -25,7 +25,7 @@ const SingleParcel = () => {
               </tr>
               
             </tbody>
-          </table>
+          {/* </table> */}
         </>
     );
 };
