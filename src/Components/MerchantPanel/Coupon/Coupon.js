@@ -17,8 +17,7 @@ const Coupon = () => {
                 <td>Expires on</td>
                 <td>coupon status</td>
               </tr>
-            </tbody>
-            <tbody>
+            
               <tr className="align-middle">
                 <td>WELCOME20</td>
                 <td>

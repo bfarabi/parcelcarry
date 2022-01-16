@@ -5,7 +5,7 @@ const SingleParcel = () => {
         <>
             {/* <table class="table "> */}
             
-            <tbody>
+           
               <tr className="App align-middle  " >
                 <td><input className="form-check-input mx-2 p-2 " type="checkbox" name="checkbox" id="" /></td>
                 <td>Sep 23, 2021</td>
@@ -24,7 +24,7 @@ const SingleParcel = () => {
                 <td><h1>...</h1></td>
               </tr>
               
-            </tbody>
+            
           {/* </table> */}
         </>
     );

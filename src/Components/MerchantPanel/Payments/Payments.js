@@ -118,13 +118,14 @@ const Payments = () => {
                       <td>Total Adjustment Amount (Tk.)</td>
                       <td>Download</td>
                     </tr>
+                  
+                  <SinglePayment></SinglePayment>
+                  <SinglePayment></SinglePayment>
+                  <SinglePayment></SinglePayment>
+                  <SinglePayment></SinglePayment>
+                  <SinglePayment></SinglePayment>
+                  <SinglePayment></SinglePayment>
                   </tbody>
-                  <SinglePayment></SinglePayment>
-                  <SinglePayment></SinglePayment>
-                  <SinglePayment></SinglePayment>
-                  <SinglePayment></SinglePayment>
-                  <SinglePayment></SinglePayment>
-                  <SinglePayment></SinglePayment>
                 </table>
                 
               

@@ -1,6 +1,6 @@
 import React from "react";
 import AdNSignUp from "../Ad&SignUp/AdNSignUp";
-import Logos from "../Logos/Logos";
+
 import Service from "../Services/Service";
 import Logistics from "../LogisticsService/Logistics";
 import Coverage from "../CoverageArea/Coverage";
@@ -16,7 +16,6 @@ const Home = () => {
     <div className="App" style={{width:'99vw'}} >
     <Header></Header>
       <AdNSignUp></AdNSignUp>
-      <Logos></Logos>
       <Service></Service>
       <Logistics></Logistics>
       <Coverage></Coverage>

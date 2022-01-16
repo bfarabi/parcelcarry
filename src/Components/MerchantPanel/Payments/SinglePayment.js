@@ -4,7 +4,7 @@ const SinglePayment = () => {
     return (
         <>
             
-            <tbody>
+            
               <tr className="align-middle" >
                 <td>1212</td>
                 <td>Sep 23,2021</td>
@@ -18,7 +18,7 @@ const SinglePayment = () => {
                 
               </tr>
               
-            </tbody>
+            
          
         </>
     );

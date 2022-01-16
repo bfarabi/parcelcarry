@@ -1,12 +1,13 @@
 import React from "react";
+import './Enterprice.css';
 
 const Success = () => {
   return (
     <>
-      <div className="row bg-light">
+      <div className="row w-100 bg-light">
         <div className="col-md-5">
           <img
-            class="m-3 w-100 h-75"
+            class="m-3 w-75"
             src="https://redx.com.bd/images/revamp/merchant-success-story.png"
             alt=""
           />
@@ -31,15 +32,15 @@ const Success = () => {
 
       {/* Contact form area */}
 
-      <div className="row my-5 ">
-        <div className="col-md-8 ">
+      <div className="row w-100 my-5 ">
+        <div className="col-md-8">
           <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
             আমাদের সাথে যোগাযোগ করুন
           </h1>
 
 
           <form action="#">
-            <div className="row">
+            <div className="row w-100 ">
               <div className="col-md-6">
                 <div class=" text-start m-4 ">
                   <label for="exampleFormControlInput1" class="form-label d-block">
@@ -101,7 +102,7 @@ const Success = () => {
 
             </div>
 
-            <div class="mb-3 text-start p-4">
+            <div class="mb-3 text-start w-75 p-4">
               <label for="exampleFormControlTextarea1" class="form-label">
                 আপনার প্রয়োজন সম্পর্কে আমাদের জানান
               </label>
@@ -121,9 +122,9 @@ const Success = () => {
           </form>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-4 ">
           <img
-            class="w-100"
+            class="driver-img w-75 "
             src="https://redx.com.bd/images/revamp/contact-us-image2.webp"
             alt=""
           />

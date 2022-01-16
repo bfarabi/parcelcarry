@@ -7,7 +7,7 @@ const AdNSignUp = () => {
       <div className="col-md-8 ad-part">
         <img
           class="video-tag"
-          src="https://redx.com.bd/images/provide-services/truck-rent.webp"
+          src="https://redx.com.bd/images/provide-services/line-haul.webp"
           alt=""
         />
         <div class="overlay"></div>

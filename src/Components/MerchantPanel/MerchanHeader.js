@@ -60,6 +60,11 @@ const MerchanHeader = () => {
                 </Link>
               </li>
               <li class="nav-item">
+                <Link class="nav-link active text" to="/admin">
+                admin
+                </Link>
+              </li>
+              <li class="nav-item">
                 <div class="">
                   <Link class="btn btn-outline-danger fw-bold" to="/create">
                     Create Parcel

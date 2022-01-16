@@ -170,7 +170,7 @@ const Parcels = () => {
 
       <div className="row justify-content-center table-responsive-md ">
         
-        <table class="table table-hover ">
+        <table class="table  table-hover ">
             
             <tbody>
               <tr className="App bg-light " >
@@ -183,14 +183,13 @@ const Parcels = () => {
                 <td>Status</td>
                 <td>Actions</td>
               </tr>
-              
-            </tbody>
           
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
         <SingleParcel></SingleParcel>
+        </tbody>
         </table>
         
       </div>
