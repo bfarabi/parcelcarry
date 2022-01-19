@@ -106,7 +106,7 @@ const Payments = () => {
           >
             <div className="row justify-content-center table-responsive-md ">
               
-                <table class="table ">
+                <table class="table table-bordered">
                   <tbody>
                     <tr className="App align-middle bg-light ">
                       <td>Invoice ID</td>

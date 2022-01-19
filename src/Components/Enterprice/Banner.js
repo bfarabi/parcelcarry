@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <>
-      <div className="col-md-8 ad-part ">
+      <div className="col-md-8 p-0 m-0 ad-part ">
         <img
           class="video-tag"
           src="https://redx.com.bd/images/provide-services/line-haul.webp"
@@ -18,10 +18,11 @@ const Banner = () => {
         <h5> &#10004; দেশব্যাপী লজিস্টিক্স নেটওয়ার্ক </h5>
         <h5> &#10004; দেশব্যাপী লজিস্টিক্স নেটওয়ার্ক </h5>
         <h5> &#10004; দেশব্যাপী লজিস্টিক্স নেটওয়ার্ক </h5>
-        <h5>  সরাসরি আমাদের সেলস টিম কে কল করুনঃ <i class="bi bi-telephone-fill text-danger"> ০৯১০০০৭৩৩৯</i> </h5>
+        <h5>  সরাসরি আমাদের সেলস টিম কে কল করুনঃ <i class="bi bi-telephone-fill text-danger"> +8801320-990096 </i> </h5>
         </div>
       </div>
-      <div className="col-md-4 login-part App">
+      <div className="col-md-4 p-0 m-0 App">
+      <div className=" login-part ">
         <h6 style={{ color: "white" }}>
           বিনামুল্যে সাইন-আপ করুন মাত্র দুই মিনিটে
         </h6>
@@ -62,6 +63,8 @@ const Banner = () => {
             </button>
           </span>
         </div>
+        </div>
+
       </div>
     </>
     );

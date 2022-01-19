@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css';
 import logo from "../../Images/Percel-Carry-logo.png";
 import payrasoft from "../../Images/logo horizontal.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div class="row pt-5 footer-bg App " style={{width:'99vw'}}>
+        <div class="row pt-5 footer-bg App w-100 p-0 m-0" >
             <div className="col-md-3 footer-colum">
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
                 <p>দ্রুততম সল্যুশনের জন্য পার্সেল ক্যারি অ্যাপটি ডাউনলোড করুন</p>
                 <img src="https://redx.com.bd/images/revamp/google-play-badge.svg" alt="" />
             </div>
@@ -31,7 +32,9 @@ const Footer = () => {
             </div>
             <div className="col-md-3 footer-colum">
             <p class='fw-bold'>Connect with us</p>
-                <span><img src="https://redx.com.bd/images/revamp/fb-icon.svg" alt="" /></span>
+            <a href="https://www.facebook.com/ParcelCarry">
+            <span><img src="https://redx.com.bd/images/revamp/fb-icon.svg" alt="" /></span>
+            </a>
                 <span><img src="https://redx.com.bd/images/revamp/yt-icon.svg" alt="" /></span>
                 <span><img src="https://redx.com.bd/images/revamp/linkedIn-icon.svg" alt="" /></span>
                 <br />
@@ -40,7 +43,7 @@ const Footer = () => {
             </div>
             
             <div class='text-end'>
-            <p class="mx-3">Developed By: <span><img class="payralogo" src={payrasoft} alt="" /></span></p> 
+            <a className="text-decoration-none" href="https://payrasoft.com/"><p class="mx-3">Developed By: <span><img class="payralogo" src={payrasoft} alt="" /></span></p></a> 
             </div>
         </div>
     );

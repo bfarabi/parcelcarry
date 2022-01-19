@@ -4,8 +4,9 @@ import SingleParcel from './SingleParcel';
 
 const Parcels = () => {
   return (
-    <div >
+    <>
       <MerchanHeader></MerchanHeader>
+      <div className="container">
       <div className=" p-3 w-100">
         <h3>Search by</h3>
 
@@ -168,7 +169,7 @@ const Parcels = () => {
         </div>
       </div>
 
-      <div className="row justify-content-center table-responsive-md ">
+      <div className="row w-100 justify-content-center table-responsive-md ">
         
         <table class="table  table-hover ">
             
@@ -193,7 +194,8 @@ const Parcels = () => {
         </table>
         
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -10,20 +10,18 @@ const AddMerchant = () => {
       <div className="content-wrapper">
         <div className="content-header">
           <div className="container-fluid">
-            <div className="row mb-2">
-              <div className="col">
-                <h1 className="m-0 text-dark">welcome to add merchant page</h1>
+          <h2 className=" text-dark">merchants</h2>
+            <div className="row mb-2 bg-white">
+            
+              <div className="d-flex justify-content-between p-3">
+              <h5>Merchant List</h5>
+                <button className="btn btn-success  " type="submit">Add Merchant</button>
               </div>
-              {/* /.col */}
-              <div className="col-sm-6">
-                {/* <ol className="breadcrumb float-sm-right">
-                  <li className="breadcrumb-item">
-                    <a href="#">Home</a>
-                  </li>
-                  <li className="breadcrumb-item active">Dashboard v1</li>
-                </ol> */}
+              <div className="col-md-6"></div>
+              <div className="col-md-6">
+              Search:  
+                <input className="text-align-end ms-2 form-control" type="text" name="" id="" />
               </div>
-              {/* /.col */}
             </div>
             {/* /.row */}
           </div>

@@ -6,7 +6,8 @@ const CreateParcel = () => {
   return (
     <div>
       <MerchanHeader></MerchanHeader>
-      <div className="row w-100">
+      <div className="container">
+      <div className=" row w-100  m-0">
         <div className="col-md-8 p-4">
           <h3>নতুন পার্সেল তৈরি করুন</h3>
           <hr class="w-25" />
@@ -17,7 +18,7 @@ const CreateParcel = () => {
 
         <div className="col-md-4"></div>
       </div>
-      <div className="row mt-4 w-100">
+      <div className="row  mt-4 w-100 m-0">
         <ul class="nav nav-pills mb-4 p-3" id="pills-tab" role="tablist">
           <li class="nav-item " role="presentation">
             <button
@@ -338,9 +339,9 @@ const CreateParcel = () => {
             aria-labelledby="pills-import-tab"
           >
             <div className="row justify-content-center ">
-              <div className="col-md-8 App">
+              <div className="col-md-8 border App">
                 <img
-                  class="w-25 m-3"
+                  class="w-25 m-3 "
                   src="https://redx.com.bd/images/noimport.png"
                   alt=""
                 />
@@ -367,6 +368,7 @@ const CreateParcel = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

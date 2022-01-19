@@ -24,12 +24,21 @@ import AddMerchant from './Components/Admin/SubMenu/AddMerchant';
 import AddHubManager from './Components/Admin/SubMenu/AddHubManager';
 import AddPickupAgent from './Components/Admin/SubMenu/AddPickupAgent';
 import DeliveryMen from './Components/Admin/SubMenu/DeliveryMen';
+import NotFound from "./Components/NotFound/NotFound";
+import MyShop from './Components/MerchantPanel/Menu/MyShop';
+import ManageLocation from './Components/MerchantPanel/Menu/ManageLocation';
+import ShopSetting from './Components/MerchantPanel/Menu/ShopSetting';
+import FAQ from './Components/MerchantPanel/Menu/FAQ';
+import Tutorial from './Components/MerchantPanel/Menu/Tutorial';
+import CreditHistory from './Components/MerchantPanel/Menu/CreditHistory';
+import CoverageArea from './Components/MerchantPanel/Menu/CoverageArea';
 
 function App() {
   return (
     <BrowserRouter >
       <Routes>
       <Route path="/" element={<Home></Home>} />
+      <Route path="/*" element={<NotFound></NotFound>} />
       <Route path="/enterprise" element={<Enterprice></Enterprice>} />
       <Route path="/c2c" element={<C2c></C2c>} />
       <Route path="/login" element={<Login></Login>} />
@@ -39,11 +48,20 @@ function App() {
       <Route path="/payments" element={<Payments></Payments>} />
       <Route path="/coupon" element={<Coupon></Coupon>} />
       <Route path="/create" element={<CreateParcel></CreateParcel>} />
+
       <Route path="/admin" element={<AdminHome></AdminHome>} />
       <Route path="/admin/addmerchant" element={<AddMerchant></AddMerchant>} />
       <Route path="/admin/addhubmanger" element={<AddHubManager></AddHubManager>} />
       <Route path="/admin/addPickup" element={<AddPickupAgent></AddPickupAgent>} />
       <Route path="/admin/deliveryman" element={<DeliveryMen></DeliveryMen>} />
+
+      <Route path="/my-shop" element={<MyShop></MyShop> } />
+      <Route path="/manage-location" element={<ManageLocation></ManageLocation>} />
+      <Route path="/shop-setting" element={<ShopSetting></ShopSetting>} />
+      <Route path="/coverage-area" element={<CoverageArea></CoverageArea>} />
+      <Route path="/credit-history" element={<CreditHistory></CreditHistory>} />
+      <Route path="/tutorial" element={<Tutorial></Tutorial>} />
+      <Route path="/faq" element={<FAQ></FAQ>} />
       
       
       </Routes>

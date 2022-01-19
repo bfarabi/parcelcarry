@@ -13,7 +13,7 @@ import Header from './../Header/Header';
 
 const Home = () => {
   return (
-    <div className="App" style={{width:'99vw'}} >
+    <div className="App " >
     <Header></Header>
       <AdNSignUp></AdNSignUp>
       <Service></Service>

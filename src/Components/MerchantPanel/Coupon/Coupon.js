@@ -5,7 +5,7 @@ const Coupon = () => {
   return (
     <div>
       <MerchanHeader></MerchanHeader>
-      <div className="row w-100 ">
+      <div className="container row w-100 ">
         <div className="col-md-8 p-5">
           <h4>Active coupon</h4>
           <hr class="w-25 text-danger " />

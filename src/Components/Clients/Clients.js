@@ -3,8 +3,8 @@ import "./Clients.css";
 
 const Clients = () => {
   return (
-    <div>
-      <div class="row"></div>
+    <div class="container">
+      <div class="row w-100"></div>
       <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
         পার্সেল ক্যারির প্রতি গ্রাহকদের ভালোবাসা{" "}
         <span style={{ color: "purple" }}>❤</span>
@@ -178,7 +178,7 @@ const Clients = () => {
 
                   {/* Clients questions section */}
 
-      <div className="row ">
+      <div className="row px-5">
         <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
           আপনার সকল জিজ্ঞাসা
         </h1>
@@ -186,6 +186,7 @@ const Clients = () => {
           সর্বাধিক জিজ্ঞাসিত প্রশ্নগুলি দেখুন, যেকোনো প্রয়োজনে আমরা আপনার পাশে
           আছি
         </h6>
+
         <div className="col-lg App">
           <div class="mx-4">
             <div class="accordion" id="myAccordion">
@@ -195,13 +196,13 @@ const Clients = () => {
                     type="button"
                     class="accordion-button collapsed fw-bold"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
+                    data-bs-target="#collapse1"
                   >
                     1. আপনাদের লজিস্টিকস চার্জ সম্পর্কে জানতে চাই?
                   </button>
                 </h2>
                 <div
-                  id="collapseOne"
+                  id="collapse1"
                   class="accordion-collapse collapse"
                   data-bs-parent="#myAccordion"
                 >
@@ -304,6 +305,7 @@ const Clients = () => {
             </div>
           </div>
         </div>
+
         <p style={{ color: "orange", fontWeight: "bold" }}>
           see all our FAQ &rarr;
         </p>

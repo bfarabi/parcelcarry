@@ -11,7 +11,7 @@ import Header from "./../Header/Header";
 
 const Enterprice = () => {
   return (
-    <div class="row App">
+    <div class="row App w-100">
       <Header></Header>
       <Banner></Banner>
       <LogoSlider></LogoSlider>

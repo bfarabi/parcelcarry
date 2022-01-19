@@ -4,7 +4,7 @@ import './Enterprice.css';
 const Success = () => {
   return (
     <>
-      <div className="row w-100 bg-light">
+      <div className="row w-100 bg-light m-0 p-0">
         <div className="col-md-5">
           <img
             class="m-3 w-75"

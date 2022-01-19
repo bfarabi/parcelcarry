@@ -2,8 +2,8 @@ import React from "react";
 
 const Courier = () => {
   return (
-    <div>
-      <div className="row py-5 justify-content-center align-items-center">
+    <div >
+      <div className="row w-100 py-5 p-0 m-0 justify-content-center align-items-center">
         <div className="col-md-6">
           <img class="w-100"
             src="https://redx.com.bd/images/revamp/homepage-del-boy.jpg"
@@ -23,7 +23,7 @@ const Courier = () => {
 
       {/* delivery section */}
 
-      <div className="row bg-dark p-4">
+      <div className="row bg-dark p-4 w-100 p-0 m-0">
         <h1 style={{ fontWeight: "bold", padding: "2rem", color: "white" }}>
           PARCEL CARRY কুরিয়ার ডেলিভারি দিচ্ছে বাংলাদেশ জুড়ে ৬৪ টি জেলায়
         </h1>
@@ -36,7 +36,7 @@ const Courier = () => {
           <form>
             <div class="form-group">
               <label for="exampleFormControlSelect1"></label>
-              <select class="form-control p-3" id="exampleFormControlSelect1">
+              <select class="form-control " id="exampleFormControlSelect1">
                 <option selected>জেলা নির্বাচন করুন</option>
                 <option>ঢাকা </option>
                 <option>কুমিল্লা </option>
@@ -50,7 +50,7 @@ const Courier = () => {
           <form>
             <div class="form-group">
               <label for="exampleFormControlSelect1"></label>
-              <select class="form-control p-3" id="exampleFormControlSelect1">
+              <select class="form-control" id="exampleFormControlSelect1">
                 <option selected> এলাকা নির্বাচন করুন</option>
                 <option>2</option>
                 <option>3</option>
@@ -69,7 +69,7 @@ const Courier = () => {
 
       {/* our Testmonial */}
 
-      <div className="row App my-4 text-center">
+      <div className="row App my-4 text-center w-100 p-0 m-0">
         <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
           আমাদের কাস্টমার টেস্টিমনিয়াল
         </h1>
