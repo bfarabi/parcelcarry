@@ -41,7 +41,7 @@ const Header = () => {
               </li>
             </ul>
             <ul class="navbar-nav m-auto ">
-              <li class="nav-item languageBtn ">
+              <li class="nav-item languageBtn d-flex justify-content-center ">
                 <a
                   class="nav-link active d-flex justify-content-between callingBtn "
                   aria-current="page"

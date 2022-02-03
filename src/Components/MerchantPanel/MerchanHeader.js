@@ -10,8 +10,8 @@ const MerchanHeader = () => {
       <div className=" container ">
         <nav class="navbar navbar-expand-lg navbar-light bg-white ">
           <div class="container-fluid">
-            <Link class="navbar-brand " to="/">
-              <img class="w-75" src={logo} alt="" width="130" height="50" />
+            <Link class="navbar-brand w-50 " to="/">
+              <img class='w-100 p-2' src={logo} alt=""  />
             </Link>
             <button
               class="navbar-toggler"
@@ -37,7 +37,7 @@ const MerchanHeader = () => {
                   </Link>
                 </li>
               </ul>
-              <ul class="navbar-nav m-auto pt-2">
+              <ul class="navbar-nav d-flex justify-content-end align-items-center pt-2">
                 <li class="nav-item">
                   <Link
                     class="nav-link active text"
@@ -67,22 +67,23 @@ const MerchanHeader = () => {
                     admin
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                   <div class="">
-                    <Link class="btn btn-outline-danger fw-bold" to="/create">
+                    <Link class="btn btn-outline-danger  fw-bold" to="/create">
                       Create Parcel
                     </Link>
                   </div>
                 </li>
                 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown w-25 ">
                   <p
-                    class="nav-link ms-2 dropdown-toggle btn btn-warning rounded-pill  fw-bold"
-                    
+                    class="nav-link  "
                     data-bs-toggle="dropdown"
                   >
-                    Menu
+                   <img className="w-25 m-0" src={icon} alt="" />
+                   
                   </p>
+                  
                   <ul class="dropdown-menu dropdown-menu-end fade-down">
                     <li>
                       <a class="dropdown-item" href="#">

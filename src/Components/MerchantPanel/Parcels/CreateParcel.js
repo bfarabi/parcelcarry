@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MerchanHeader from "../MerchanHeader";
 import "./CreateParcel.css";
 
@@ -246,9 +247,9 @@ const CreateParcel = () => {
                   <button class="btn btn-outline-danger px-5" type="submit">
                     Cancel
                   </button>
-                  <button class="btn btn-danger px-5" type="submit">
+                  <Link to="/invoice" class="btn btn-danger px-5" >
                     Submit
-                  </button>
+                  </Link>
                 </div>
               </div>
 

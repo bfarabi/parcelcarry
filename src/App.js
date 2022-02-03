@@ -32,6 +32,28 @@ import FAQ from './Components/MerchantPanel/Menu/FAQ';
 import Tutorial from './Components/MerchantPanel/Menu/Tutorial';
 import CreditHistory from './Components/MerchantPanel/Menu/CreditHistory';
 import CoverageArea from './Components/MerchantPanel/Menu/CoverageArea';
+import AllMerchant from './Components/Admin/SubMenu/AllMerchant';
+import PendingMerchant from "./Components/Admin/SubMenu/PendingMerchant";
+import RejectedMerchant from "./Components/Admin/SubMenu/RejectedMerchant";
+import AllHub from "./Components/Admin/SubMenu/AllHub";
+import PendingHub from "./Components/Admin/SubMenu/PendingHub";
+import RejectedHub from "./Components/Admin/SubMenu/RejectedHub";
+import AllPickup from "./Components/Admin/SubMenu/AllPickup";
+import PendingPick from "./Components/Admin/SubMenu/PendingPick";
+import RejectedPick from "./Components/Admin/SubMenu/RejectedPick";
+import AllMan from "./Components/Admin/SubMenu/AllMan";
+import PendingMan from "./Components/Admin/SubMenu/PendingMan";
+import RejectedMan from "./Components/Admin/SubMenu/RejectedMan";
+import ParcelList from './Components/Admin/SubMenu/ParcelList';
+import PendingParcel from './Components/Admin/SubMenu/PendingParcel';
+import RejectedParcel from './Components/Admin/SubMenu/RejectedParcel';
+import EditAllmerch from './Components/Admin/EditSubMenu/EditAllmerch';
+import Invoice from './Components/Admin/Invoice';
+import MerchantView from './Components/Admin/SubMenu/MerchantView';
+import ChargeList from './Components/Admin/SubMenu/ChargeList';
+import WeightList from './Components/Admin/SubMenu/WeightList';
+import ChargePack from './Components/Admin/SubMenu/ChargePack';
+import DeliveryOption from './Components/Admin/SubMenu/DeliveryOption';
 
 function App() {
   return (
@@ -50,10 +72,37 @@ function App() {
       <Route path="/create" element={<CreateParcel></CreateParcel>} />
 
       <Route path="/admin" element={<AdminHome></AdminHome>} />
+      <Route path="/invoice" element={<Invoice></Invoice>} />
       <Route path="/admin/addmerchant" element={<AddMerchant></AddMerchant>} />
+      <Route path="/admin/all-merchant" element={<AllMerchant></AllMerchant>} />
+      <Route path="/admin/edit-all-merchant" element={<EditAllmerch></EditAllmerch>} />
+      <Route path="/admin/pending-merchant" element={<PendingMerchant></PendingMerchant>} />
+      <Route path="/admin/rejected-merchant" element={<RejectedMerchant></RejectedMerchant>} />
+      <Route path="/admin/merchant-view" element={<MerchantView></MerchantView>} />
+
+      <Route path="/admin/parcel-list" element={<ParcelList></ParcelList>} />
+      <Route path="/admin/pending-parcel" element={<PendingParcel></PendingParcel>} />
+      <Route path="/admin/rejected-parcel" element={<RejectedParcel></RejectedParcel>} />
+
       <Route path="/admin/addhubmanger" element={<AddHubManager></AddHubManager>} />
+      <Route path="/admin/all-hub" element={<AllHub></AllHub>} />
+      <Route path="/admin/pending-hub" element={<PendingHub></PendingHub>} />
+      <Route path="/admin/rejected-hub" element={<RejectedHub></RejectedHub>} />
+
+      <Route path="/admin/all-pickup" element={<AllPickup></AllPickup>} />
       <Route path="/admin/addPickup" element={<AddPickupAgent></AddPickupAgent>} />
+      <Route path="/admin/pending-pickup" element={<PendingPick></PendingPick>} />
+      <Route path="/admin/rejected-pickup" element={<RejectedPick></RejectedPick>} />
+
       <Route path="/admin/deliveryman" element={<DeliveryMen></DeliveryMen>} />
+      <Route path="/admin/charge-list" element={<ChargeList></ChargeList>} />
+      <Route path="/admin/weight-list" element={<WeightList></WeightList>} />
+      <Route path="/admin/charge-package" element={<ChargePack></ChargePack>} />
+      <Route path="/admin/delivery-option" element={<DeliveryOption></DeliveryOption>} />
+
+      <Route path="/admin/all-man" element={<AllMan></AllMan>} />
+      <Route path="/admin/rejected-man" element={<RejectedMan></RejectedMan>} />
+      <Route path="/admin/pending-man" element={<PendingMan></PendingMan>} />
 
       <Route path="/my-shop" element={<MyShop></MyShop> } />
       <Route path="/manage-location" element={<ManageLocation></ManageLocation>} />

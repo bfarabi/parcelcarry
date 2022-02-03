@@ -61,7 +61,7 @@ const Payments = () => {
         </div>
       </div>
 
-      <div className="row App mt-4 w-100">
+      <div className="row App mt-4 m-0 w-100">
         <ul
           class="nav nav-pills mb-4 d-flex justify-content-center"
           id="pills-tab"

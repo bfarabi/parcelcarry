@@ -3,25 +3,26 @@ import { Link } from "react-router-dom";
 import payrasoft from "../../Images/logo horizontal.png";
 import logo from "../../Images/Percel-Carry-logo.png";
 import icon from "../../Images/parcel carry icon.png";
+import "./admin.css";
 
 const AdminMenu = () => {
   return (
     <div>
-      <aside className="main-sidebar sidebar-dark-primary elevation-4">
+      <aside className="main-sidebar sidebar-light-primary ">
         {/* Brand Logo */}
-        <Link to="/" className="brand-link pt-0 ">
+        <Link to="/" className="brand-link  pb-2 pt-1 ">
           <img
-            style={{ padding: "0.5rem" }}
+            // style={{ padding: "0.5rem" }}
             src={logo}
             alt="logo"
-            className="w-100 bg-white elevation-3"
+            className="w-100 bg-white "
           />
           {/* <span className="brand-text font-weight-light">Payra Soft</span> */}
         </Link>
         {/* Sidebar */}
         <div className="sidebar">
           {/* Sidebar user panel (optional) */}
-          <div className="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div className="user-panel mt-2  pb-2 mb-3  admin-div">
             <div className="image">
               <img
                 src={icon}
@@ -29,10 +30,14 @@ const AdminMenu = () => {
                 alt=""
               />
             </div>
-            <div className="info">
-              <a href="#" className="d-block">
+            <div className="info ">
+              <a href="#" className="d-block text-decoration-none ">
                 Admin
               </a>
+            </div>
+
+            <div className="crossBtn" data-widget="pushmenu">
+              <i class="fas fa-times fs-3 text-danger"></i>
             </div>
           </div>
 
@@ -75,35 +80,29 @@ const AdminMenu = () => {
                   </p>
                 </a>
                 <ul className="nav nav-treeview">
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link to="/admin/addmerchant" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Add Merchants</p>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
-                    <a href="pages/layout/boxed.html" className="nav-link">
+                    <Link to="/admin/all-merchant" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>All Merchants</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
-                      href="pages/layout/fixed-sidebar.html"
-                      className="nav-link"
-                    >
+                    <Link to="/admin/pending-merchant" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Pending Merchants</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
-                      href="pages/layout/fixed-topnav.html"
-                      className="nav-link"
-                    >
+                    <Link to="/admin/rejected-merchant" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Rejected Merchants</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a
@@ -126,24 +125,33 @@ const AdminMenu = () => {
                   </p>
                 </a>
                 <ul className="nav nav-treeview">
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a href="pages/charts/chartjs.html" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Add Parcel</p>
                     </a>
-                  </li>
+                  </li> */}
+
                   <li className="nav-item">
-                    <a href="pages/charts/flot.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>Pending Parcel List</p>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="pages/charts/inline.html" className="nav-link">
+                    <Link to="/admin/parcel-list" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Parcel List</p>
-                    </a>
+                    </Link>
                   </li>
+
+                  <li className="nav-item">
+                    <Link to="/admin/pending-parcel" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Pending Parcel List</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/admin/rejected-parcel" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Rejected Parcel</p>
+                    </Link>
+                  </li>
+
                   <li className="nav-item">
                     <a href="pages/charts/inline.html" className="nav-link">
                       <i className="far fa-circle nav-icon" />
@@ -169,12 +177,6 @@ const AdminMenu = () => {
                       <p>Returning </p>
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <a href="pages/UI/sliders.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>Rejected Parcel</p>
-                    </a>
-                  </li>
                 </ul>
               </li>
 
@@ -194,22 +196,22 @@ const AdminMenu = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/UI/icons.html" className="nav-link">
+                    <Link to="/admin/pending-hub" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Pending Hub Manager</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/UI/buttons.html" className="nav-link">
+                    <Link to="/admin/rejected-hub" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Rejected Hub Manager</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/UI/sliders.html" className="nav-link">
+                    <Link to="/admin/all-hub" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>All Hub Manager</p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -230,22 +232,22 @@ const AdminMenu = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/forms/advanced.html" className="nav-link">
+                    <Link to="/admin/pending-pickup" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Pending Pickup Agent</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/forms/editors.html" className="nav-link">
+                    <Link to="/admin/rejected-pickup" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Rejected Pickup Agent</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/forms/editors.html" className="nav-link">
+                    <Link to="/admin/all-pickup" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>All Pickup Agent</p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -266,22 +268,22 @@ const AdminMenu = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/tables/data.html" className="nav-link">
+                    <Link to="/admin/pending-man" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Pending Delivery Man</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/tables/jsgrid.html" className="nav-link">
+                    <Link to="/admin/rejected-man" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Rejected Delivery Man</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/tables/jsgrid.html" className="nav-link">
+                    <Link to="/admin/all-man" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>All Delivery Man</p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -441,6 +443,42 @@ const AdminMenu = () => {
                       <i className="far fa-circle nav-icon" />
                       <p>Completed Support</p>
                     </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="nav-item has-treeview">
+                <a href="#" className="nav-link">
+                  <i className="nav-icon far fa-plus-square" />
+                  <p>
+                    Application
+                    <i className="fas fa-angle-left right" />
+                  </p>
+                </a>
+                <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                    <Link to="/admin/charge-list" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Charge List</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/admin/weight-list" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Weight List</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/admin/charge-package " className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Charge Package</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/admin/delivery-option" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Delivery Option</p>
+                    </Link>
                   </li>
                 </ul>
               </li>

@@ -41,10 +41,11 @@ const AdminDashboard = () => {
           <div className="container-fluid">
             {/* Small boxes (Stat box) */}
             <div className="row">
+            
               <div className="col-lg-3 col-6  ">
                 {/* small box */}
                 <Link
-                  to="addmerchant"
+                  to="all-merchant"
                   className="small-box bg-white shadow p-3  text-decoration-none"
                 >
                   <div className="inner ">
@@ -63,7 +64,7 @@ const AdminDashboard = () => {
               <div className="col-lg-3 col-6">
                 {/* small box */}
                 <Link
-                  to="addhubmanger"
+                  to="all-hub"
                   className="small-box bg-white shadow p-3 text-decoration-none "
                 >
                   <div className="inner ">
@@ -82,7 +83,7 @@ const AdminDashboard = () => {
               <div className="col-lg-3 col-6">
                 {/* small box */}
                 <Link
-                  to="addPickup"
+                  to="all-pickup"
                   className="small-box bg-white shadow p-3 text-decoration-none"
                 >
                   <div className="inner">
@@ -98,7 +99,7 @@ const AdminDashboard = () => {
               {/* ./col */}
               <div className="col-lg-3 col-6">
                 {/* small box */}
-                <Link to="deliveryman" className="small-box bg-white shadow p-3  text-decoration-none">
+                <Link to="all-man" className="small-box bg-white shadow p-3  text-decoration-none">
                   <div className="inner">
                     <h3>65</h3>
                     <h6 style={lineHeighting} >Delivery man</h6>
