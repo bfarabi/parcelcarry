@@ -1,6 +1,7 @@
 import React from 'react';
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from './../AdminFooter';
 
 const RejectedParcel = () => {
     return (
@@ -79,6 +80,7 @@ const RejectedParcel = () => {
           
         </div> */}
       </div>
+      <AdminFooter></AdminFooter>
     </div>
     );
 };

@@ -1,6 +1,9 @@
 import React from "react";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from './../AdminFooter';
+import MalePhoto from "../../../Images/male.png";
+import { Link } from 'react-router-dom';
 
 const PendingMan = () => {
   return (
@@ -10,13 +13,31 @@ const PendingMan = () => {
       <div className="content-wrapper">
         <div className="content-header">
           <div className="container-fluid">
-            <h2 className=" text-dark">merchants</h2>
+            <h2 className=" text-dark">Delivery Man</h2>
             <div className="row  mb-2 bg-white">
               <div className="d-flex justify-content-between p-3">
-                <h5>Merchant List</h5>
-                <button className="btn btn-success  " type="submit">
-                  Add Merchant
-                </button>
+                <h5>Pending Delivery Man</h5>
+                <div
+                  className="btn-group m-1"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn btn-success ms-1">
+                    Copy
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    CSV
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    Excel
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    PDF
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    Print
+                  </button>
+                </div>
               </div>
               <div className="col-md-6"></div>
 
@@ -37,32 +58,68 @@ const PendingMan = () => {
                 <table class="table table-bordered table-responsive">
                   <tbody>
                     <tr className="App bg-light ">
+                      <td>
+                        <div class="form-check ">
+                          <input
+                            class="form-check-input "
+                            type="checkbox"
+                            value=""
+                            id="defaultCheck1"
+                          />
+                        </div>
+                      </td>
+
+                      <td>#SL</td>
                       <td>ID</td>
-                      <td>Full Name</td>
-                      <td>Phone</td>
-                      <td>Email</td>
-                      <td>experience</td>
-                      <td>Area</td>
-                      <td>Hub Manager</td>
-                      <td>Pickup Agent</td>
                       <td>Images</td>
+                      <td>Full Name</td>
+                      <td>Full Address</td>
+                      
+                      <td> Area</td>
+                      <td>Contact Number</td>
+                      
+                      <td> Email </td>
+                      
+                      <td> Created Date </td>
+                      <td> Note </td>
                       <td>Status</td>
                       <td>Action</td>
                     </tr>
 
                     <tr className="App bg-light ">
-                      <td>01</td>
-                      <td>Bill gates</td>
-                      <td>01626262626</td>
-                      <td>Parcel @gmail.com</td>
-                      <td>00</td>
-                      <td>banani</td>
-                      <td>00</td>
-                      <td>00</td>
-                      <td>00</td>
-                      <td>Active</td>
                       <td>
-                        <i class="bi bi-pencil-square text-warning m-1"></i>
+                        <div class="form-check ">
+                          <input
+                            class="form-check-input "
+                            type="checkbox"
+                            value=""
+                            id="defaultCheck1"
+                          />
+                        </div>
+                      </td>
+                      <td>01</td>
+                      <td>3231</td>
+                      <td>
+                      <img
+                          className=" w-100 profile-user-img img-fluid img-circle"
+                          src={MalePhoto}
+                          alt
+                        />
+                      </td>
+                      <td>Bill gates</td>
+                      
+                      <td>Dhanmondi</td>
+                      <td>Dhanmondi</td>
+                      <td>+8801600000000</td>
+                     
+                      <td>admin@mail.com</td>
+                      
+                      <td>02/02/2022</td>
+                      <td>my note</td>
+                      <td>Active</td>
+                      <td className="d-flex" >
+                      <Link to="/admin/edit-view"><i class="bi bi-pencil-square text-warning m-1"></i></Link>
+                        <Link to="/admin/hub-view"> <i class="fas fa-eye text-primary m-1"></i></Link>
                         <i class="bi bi-trash text-danger m-1"></i>
                       </td>
                     </tr>
@@ -75,6 +132,7 @@ const PendingMan = () => {
           {/* /.container-fluid */}
         </div>
       </div>
+      <AdminFooter></AdminFooter>
     </div>
   );
 };

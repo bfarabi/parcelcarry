@@ -2,17 +2,20 @@ import React from "react";
 import AdminHeader from "./AdminHeader";
 import AdminMenu from "./AdminMenu";
 import logo from "../../Images/Percel-Carry-logo.png";
-import MerchanHeader from './../MerchantPanel/MerchanHeader';
+import AdminFooter from './AdminFooter';
+
 
 const Invoice = () => {
   return (
     <>
-      
-      <div >
-      <MerchanHeader></MerchanHeader>
-        <section className="content">
-          <div className="container-fluid ">
-            <div className="main-content-container container-fluid w-75 ">
+    <div class="wrapper">
+      <AdminHeader></AdminHeader>
+      <AdminMenu></AdminMenu>
+      <div className="content-wrapper">
+        <div className="content-header">
+          <div className="container-fluid">
+            
+          <div className="main-content-container container-fluid w-75 ">
               <div className="page-header row no-gutters py-4">
                 <div class="   ">
                   <h3 class="page-title">
@@ -234,9 +237,15 @@ const Invoice = () => {
 
               
             </div>
+            
           </div>
-        </section>
+          {/* /.container-fluid */}
+        </div>
       </div>
+      <AdminFooter></AdminFooter>
+    </div>
+      
+     
     </>
   );
 };

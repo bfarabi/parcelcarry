@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from './../AdminFooter';
 
 const PendingMerchant = () => {
   return (
@@ -11,13 +12,31 @@ const PendingMerchant = () => {
       <div className="content-wrapper ">
         <div className="content-header px-0">
           <div className="container fluid">
-            <h2 className=" text-dark">merchants</h2>
+            <h2 className=" text-dark">Merchants</h2>
             <div className="row bg-white">
               <div className="d-flex justify-content-between p-3">
-                <h5>Merchant List</h5>
-                <button className="btn btn-success  " type="submit">
-                  Add Merchant
-                </button>
+                <h5>Pending Merchant</h5>
+                <div
+                  className="btn-group m-1"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn btn-success ms-1">
+                    Copy
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    CSV
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    Excel
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    PDF
+                  </button>
+                  <button type="button" class="btn btn-success ms-1">
+                    Print
+                  </button>
+                </div>
               </div>
               <div className="col-md-6"></div>
 
@@ -38,6 +57,17 @@ const PendingMerchant = () => {
                 <table class="table mb-0 table-bordered table-responsive">
                   <tbody>
                     <tr className="App bg-light ">
+                    <td>
+                        <div class="form-check ">
+                          <input
+                            class="form-check-input "
+                            type="checkbox"
+                            value=""
+                            id="defaultCheck1"
+                          />
+                        </div>
+                        </td>
+                      <td>#SL</td>
                       <td>ID</td>
                       <td>Full Name</td>
                       <td>Shop Name</td>
@@ -47,13 +77,24 @@ const PendingMerchant = () => {
                       <td>Product type</td>
                       <td>Shop Address</td>
                       <td>Pickup Area</td>
-                      <td>FB/web URL</td>
+                      
                       <td>Status</td>
                       <td>Action</td>
                     </tr>
                    
                     <tr className="App bg-light ">
+                    <td>
+                        <div class="form-check ">
+                          <input
+                            class="form-check-input "
+                            type="checkbox"
+                            value=""
+                            id="defaultCheck1"
+                          />
+                        </div>
+                        </td>
                       <td>01</td>
+                      <td>321</td>
                       <td>Bill gates</td>
                       <td>Parcel carry</td>
                       <td>00</td>
@@ -63,7 +104,7 @@ const PendingMerchant = () => {
                       <td>00</td>
                       <td>Banani</td>
                       <td>banani</td>
-                      <td>www. facebook.com</td>
+                      
                       <td>Active</td>
                       <td className="d-flex">
                       <Link to="/admin/edit-all-merchant"><i class="bi bi-pencil-square m-1"></i></Link>
@@ -81,6 +122,7 @@ const PendingMerchant = () => {
           {/* /.container-fluid */}
         </div>
       </div>
+      <AdminFooter></AdminFooter>
     </div>
   );
 };

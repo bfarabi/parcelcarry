@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import MalePhoto from "../../Images/male.png";
 
 const AdminHeader = () => {
   return (
@@ -13,14 +14,10 @@ const AdminHeader = () => {
             </a>
           </li>
           <li className="nav-item d-none d-sm-inline-block">
-            <Link to='/admin' className="nav-link">
-              Home
+            <Link to="/" className="nav-link">
+              <i className="fas fa-globe mx-1"></i>
+              Go to website
             </Link>
-          </li>
-          <li className="nav-item d-none d-sm-inline-block">
-            <a href="#" className="nav-link">
-              Contact
-            </a>
           </li>
         </ul>
         {/* SEARCH FORM */}
@@ -44,19 +41,19 @@ const AdminHeader = () => {
           {/* Messages Dropdown Menu */}
           <li className="nav-item dropdown">
             <a className="nav-link " data-toggle="dropdown" href="#">
-              <i className="far fa-comments" />
-              
+              <i className="far fa-comments bg-success p-1 rounded" />
+
               {/* <span className="badge badge-danger navbar-badge mx-3">3</span> */}
             </a>
             <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
               <a href="#" className="dropdown-item">
                 {/* Message Start */}
                 <div className="media">
-                  <img
+                  {/* <img
                     src="dist/img/user1-128x128.jpg"
                     alt="User Avatar"
                     className="img-size-50 mr-3 img-circle"
-                  />
+                  /> */}
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       Brad Diesel
@@ -76,11 +73,11 @@ const AdminHeader = () => {
               <a href="#" className="dropdown-item">
                 {/* Message Start */}
                 <div className="media">
-                  <img
+                  {/* <img
                     src="dist/img/user8-128x128.jpg"
                     alt="User Avatar"
                     className="img-size-50 img-circle mr-3"
-                  />
+                  /> */}
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       John Pierce
@@ -100,11 +97,11 @@ const AdminHeader = () => {
               <a href="#" className="dropdown-item">
                 {/* Message Start */}
                 <div className="media">
-                  <img
+                  {/* <img
                     src="dist/img/user3-128x128.jpg"
                     alt="User Avatar"
                     className="img-size-50 img-circle mr-3"
-                  />
+                  /> */}
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       Nora Silvester
@@ -130,7 +127,7 @@ const AdminHeader = () => {
           {/* Notifications Dropdown Menu */}
           <li className="nav-item dropdown">
             <a className="nav-link" data-toggle="dropdown" href="#">
-              <i className="far fa-bell" />
+              <i className="far fa-bell bg-danger p-1 rounded" />
               {/* <span className="badge badge-warning navbar-badge">15</span> */}
             </a>
             <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -159,32 +156,50 @@ const AdminHeader = () => {
             </div>
           </li>
           {/* customize */}
+
           <li className="nav-item dropdown">
             <a
-              className="nav-link"
+              className="nav-link w-75 py-0"
               data-widget="control-sidebar"
               data-toggle="dropdown"
               data-slide="true"
               href="#"
             >
-              <i className="fas fa-th-large" />
+              <img className="w-25 " src={MalePhoto} alt="" />
+              <span className="fw-bold" >Admin</span>
             </a>
-            <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+
+            <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right pt-0">
+              <div className="d-flex w-100  p-2">
+                <div className="dropdown-item w-50">
+                  <img className="w-75" src={MalePhoto} alt="" />
+                </div>
+                <div className="w-50">
+                  <p className="fw-bold">Admin</p>
+
+                 <Link to="/admin/view-profile">
+                 <button className="btn btn-rounded btn-danger btn-sm">
+                    View profile
+                  </button>
+                 </Link> 
+                </div>
+              </div>
+              <div className="dropdown-divider" />
+              <Link to="/admin/view-profile"  className="dropdown-item">
+                <i className="fas fa-user mr-1" /> My Profile
+                </Link>
+              <div className="dropdown-divider" />
+
+              <Link to="/admin/account-setting" className="dropdown-item">
+                <i className="fas fa-cogs mr-1" />Account Setting
+              </Link>
+              <div className="dropdown-divider" />
+              <Link to="/admin/change-password" className="dropdown-item">
+                <i className="fas fa-key mr-1" /> Change Password
+              </Link>
               <div className="dropdown-divider" />
               <a href="#" className="dropdown-item">
-                <i className="fas fa-envelope mr-1" /> new messages
-              </a>
-              <div className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                <i className="fas fa-envelope mr-1" /> new messages
-              </a>
-              <div className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                <i className="fas fa-envelope mr-1" /> new messages
-              </a>
-              <div className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                <i className="fas fa-envelope mr-1" /> new messages
+                <i className="fas fa-power-off mr-1" /> Log out
               </a>
             </div>
           </li>

@@ -10,16 +10,22 @@ const Banner = () => {
           alt=""
         />
         <div class="overlay"></div>
-        <h1 class="banner-text ">
+        
+        <div className="row position-absolute adtext text-white px-1">
+        <h1 class="p-4 ">
         দেশ সেরা <span style={{ color: "red" }}>এন্টারপ্রাইজ</span> লজিস্টিকস পৌঁছাবে আপনার লক্ষ্যে
           
         </h1>
-        <div class="banner-text-small">
+        
+        
+        <div class="">
         <h5> &#10004; দেশব্যাপী লজিস্টিক্স নেটওয়ার্ক </h5>
         <h5> &#10004; দেশব্যাপী লজিস্টিক্স নেটওয়ার্ক </h5>
         <h5> &#10004; দেশব্যাপী লজিস্টিক্স নেটওয়ার্ক </h5>
         <h5>  সরাসরি আমাদের সেলস টিম কে কল করুনঃ <i class="bi bi-telephone-fill text-danger"> +8801320-990096 </i> </h5>
         </div>
+        </div>
+        
       </div>
       <div className="col-md-4 p-0 m-0 App">
       <div className=" login-part ">

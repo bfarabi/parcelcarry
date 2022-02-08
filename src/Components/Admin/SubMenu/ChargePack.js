@@ -1,6 +1,7 @@
 import React from "react";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from './../AdminFooter';
 
 const ChargePack = () => {
   return (
@@ -56,7 +57,7 @@ const ChargePack = () => {
                           <table class="table">
                             <tbody>
                               <tr>
-                                <th scope="col">SL#</th>
+                                <th scope="col">#SL</th>
                                 <th scope="col">
                                   All <input type="checkbox" name="" id="" />{" "}
                                 </th>
@@ -131,7 +132,7 @@ const ChargePack = () => {
                       <table class="table">
                       <tbody>
                           <tr>
-                            <th scope="col">SL#</th>
+                            <th scope="col">#SL</th>
                             <th scope="col">Package Name</th>
                             <th scope="col">Charge Rate</th>
                             <th scope="col">Weight and Charge</th>
@@ -183,6 +184,7 @@ const ChargePack = () => {
           </div>
         </section>
       </div>
+      <AdminFooter></AdminFooter>
     </>
   );
 };

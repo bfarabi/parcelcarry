@@ -1,6 +1,8 @@
 import React from "react";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from './../AdminFooter';
+import { Link } from 'react-router-dom';
 
 const MerchantView = () => {
   return (
@@ -25,35 +27,39 @@ const MerchantView = () => {
               <div className=" row bg-white p-3 m-1 ">
                 <div className="col">
                   <h5 className="fw-bold">Total Parcel</h5>
-                  <h5 className="text-primary ">0</h5>
+                  <i className="nav-icon fas fa-copy fs-5" />
+                  
                 </div>
 
                 <div className="col text-center pt-3">
-                  <i className="nav-icon fas fa-copy fs-5" />
+                <h4 className="text-primary ">0</h4>
                 </div>
               </div>
             </div>
             <div className="col-md-3  ">
               <div className=" row bg-white p-3 m-1">
                 <div className="col">
-                  <h5 className="fw-bold">Total Price</h5>
-                  <h5 className="text-primary ">0</h5>
+                  <h5 className="fw-bold">Total Sales</h5>
+                  <i className="nav-icon fas fa-copy fs-5" />
                 </div>
 
                 <div className="col text-center pt-3">
-                  <i className="nav-icon fas fa-copy fs-5" />
+                  
+                  <h4 className="text-primary ">0</h4>
                 </div>
               </div>
             </div>
             <div className="col-md-3  ">
               <div className=" row bg-white p-3  m-1">
                 <div className="col">
-                  <h5 className="fw-bold">Due invoice</h5>
-                  <h5 className="text-primary ">0</h5>
+                  <h5 className="fw-bold">Due Invoice</h5>
+                  <i className="nav-icon fas fa-copy fs-5" />
+                  
                 </div>
 
                 <div className="col text-center pt-3">
-                  <i className="nav-icon fas fa-copy fs-5" />
+                <h4 className="text-primary ">0</h4>
+                  
                 </div>
               </div>
             </div>
@@ -61,7 +67,7 @@ const MerchantView = () => {
             <div className="col-md-7 mt-3 ">
             
             <table class="table ms-1 p-3  mt-0 table-borderless bg-white">
-            <h4 className="p-3"> Profile info</h4>
+            <h4 className="p-3 fw-bold"> Profile info</h4>
                   <tbody>
                     <tr className="  ">
                       <td>Full Name</td>
@@ -73,17 +79,17 @@ const MerchantView = () => {
                       <td>Parcel@carry.gmail.com</td>
                     </tr>
                     <tr className=" ">
-                      <td>Company</td>
-                      <td>Name</td>
+                      <td>Shop Name</td>
+                      <td> parcel carry</td>
                     </tr>
                     <tr className=" ">
                       <td>Mobile</td>
-                      <td>...</td>
+                      <td>01711100011</td>
                     </tr>
                     
                     <tr className=" ">
-                      <td>Gender</td>
-                      <td>Male</td>
+                      <td>Address</td>
+                      <td>banani, Dhaka</td>
                     </tr>
                     
                     <tr className=" ">
@@ -91,23 +97,51 @@ const MerchantView = () => {
                       <td>parcel.com</td>
                     </tr>
                     <tr className=" ">
-                      <td>GST/VAT Number</td>
-                      <td>000</td>
+                      <td>Facebook</td>
+                      <td>www.fb.com/parcelcarry</td>
                     </tr>
                     <tr className=" ">
-                      <td>State</td>
+                      <td>Status</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>Image</td>
                       <td>...</td>
                     </tr>
                     <tr className=" ">
-                      <td>City</td>
+                      <td>Bank Account Name</td>
                       <td>...</td>
                     </tr>
                     <tr className=" ">
-                      <td>Post code</td>
+                      <td>Bank Account number</td>
                       <td>...</td>
                     </tr>
                     <tr className=" ">
-                      <td>Note</td>
+                      <td>Bank Name</td>
+                      <td>...</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>Bkash Number</td>
+                      <td>...</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>Rocket Number</td>
+                      <td>...</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>Nagad Number</td>
+                      <td>...</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>NID</td>
+                      <td>...</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>Trade License</td>
+                      <td>...</td>
+                    </tr>
+                    <tr className=" ">
+                      <td>TIN Number</td>
                       <td>...</td>
                     </tr>
                     
@@ -116,14 +150,157 @@ const MerchantView = () => {
             </div>
 
             <div className="col-md-5 mt-3 ">
-            <div class="bg-white text-center py-4">
-            <h4 className="py-3">Project</h4>
-            <p className="py-5">-Not enough data</p>
+            <div class="bg-white  p-1">
+            <h4 className="p-1 fw-bold">Last Parcel</h4>
+            
+            <div className="  table-responsive  ">
+                <table class="table table-border">
+                  
+                  <thead>
+                  <tr>
+                  <td>#SL</td>
+                  <td>Invoice ID</td>
+                  <td>Customer Details</td>
+                  <td>Status</td>
+                  <td>Action</td>
+                  
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  
+                   
+                  </tbody>
+                </table>
+                
+                
+              </div>
+
             </div>
+
             <div className="mt-2">
-            <div class="bg-white text-center py-4">
-            <h4 className="py-3">Invoice</h4>
-            <p className="py-5">-Not enough data</p>
+            <div class="bg-white p-1">
+            <h4 className="p-1">Last Invoice</h4>
+
+            <div className="  table-responsive  ">
+                <table class="table table-border">
+                  
+                  <thead>
+                  <tr>
+                  <td>#SL</td>
+                  <td>Invoice ID</td>
+                  <td>Customer Details</td>
+                  <td>Status</td>
+                  <td>Action</td>
+                  
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  <tr>
+                  <td>01</td>
+                  <td>231</td>
+                  
+                  <td>Dhaka, Bangladesh</td>
+                  <td className="text-success fw-bold">Active</td>
+                  <td className="">
+                        <Link to="/admin/merchant-view">
+                         <i className="fas fa-eye m-1 bg-primary p-1 rounded "></i>
+                        </Link>
+                      </td>
+                  </tr>
+                  
+                   
+                  </tbody>
+                </table>
+                
+                
+              </div>
+
             </div>
             </div>
               
@@ -133,6 +310,7 @@ const MerchantView = () => {
         </div>
         {/* /.container-fluid */}
       </div>
+      <AdminFooter></AdminFooter>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const AdminMenu = () => {
               />
             </div>
             <div className="info ">
-              <a href="#" className="d-block text-decoration-none ">
+              <a href="#" className="d-block text-decoration-none fw-bold mx-2">
                 Admin
               </a>
             </div>
@@ -51,27 +51,15 @@ const AdminMenu = () => {
             >
               {/* Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library */}
-              {/* <li className="nav-item has-treeview menu-open">
-                <a href="#" className="nav-link active">
+              <li className="nav-item has-treeview menu-open">
+                <Link to="/admin" className="nav-link active">
                   <i className="nav-icon fas fa-tachometer-alt" />
                   <p>Dashboard</p>
-                </a>
-              </li> */}
-
-              {/* widgets with badge */}
-              {/* <li className="nav-item">
-                <a href="pages/widgets.html" className="nav-link">
-                  <i className="nav-icon fas fa-th" />
-                  <p>
-                    Widgets
-                    <span className="right badge badge-danger">New</span>
-                  </p>
-                </a>
-              </li> */}
-              {/* widgets with badge end*/}
+                </Link>
+              </li>
 
               <li className="nav-item has-treeview">
-                <a href="#" className="nav-link">
+                <a className="nav-link">
                   <i className="nav-icon fas fa-copy" />
                   <p>
                     Merchants
@@ -106,7 +94,7 @@ const AdminMenu = () => {
                   </li>
                   <li className="nav-item">
                     <a
-                      href="pages/layout/fixed-footer.html"
+                      
                       className="nav-link"
                     >
                       <i className="far fa-circle nav-icon" />
@@ -140,43 +128,43 @@ const AdminMenu = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/admin/pending-parcel" className="nav-link">
+                    <Link to="/admin/parcel-list" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Pending Parcel List</p>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/admin/rejected-parcel" className="nav-link">
+                    <Link to="/admin/parcel-list" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Rejected Parcel</p>
                     </Link>
                   </li>
 
-                  <li className="nav-item">
-                    <a href="pages/charts/inline.html" className="nav-link">
+                  {/* <li className="nav-item">
+                    <a  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Delivery in Progress</p>
                     </a>
                   </li>
 
                   <li className="nav-item">
-                    <a href="pages/UI/general.html" className="nav-link">
+                    <a  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Delivered</p>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/UI/icons.html" className="nav-link">
+                    <a  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Hold</p>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/UI/buttons.html" className="nav-link">
+                    <a  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Returning </p>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
 
@@ -262,10 +250,10 @@ const AdminMenu = () => {
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <a href="pages/tables/simple.html" className="nav-link">
+                    <Link to="/admin/add-delivery-man"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Add Delivery Man</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/admin/pending-man" className="nav-link">
@@ -287,25 +275,9 @@ const AdminMenu = () => {
                   </li>
                 </ul>
               </li>
-              {/* <li className="nav-header">EXAMPLES</li>
-              <li className="nav-item">
-                <a href="pages/calendar.html" className="nav-link">
-                  <i className="nav-icon far fa-calendar-alt" />
-                  <p>
-                    Calendar
-                    <span className="badge badge-info right">2</span>
-                  </p>
-                </a>
-              </li> */}
-              {/* <li className="nav-item">
-                <a href="pages/gallery.html" className="nav-link">
-                  <i className="nav-icon far fa-image" />
-                  <p>Gallery</p>
-                </a>
-              </li> */}
-
+              
               <li className="nav-item has-treeview">
-                <a href="#" className="nav-link">
+                <a  className="nav-link">
                   <i className="nav-icon far fa-envelope" />
                   <p>
                     Accounts
@@ -314,68 +286,68 @@ const AdminMenu = () => {
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <a href="pages/mailbox/mailbox.html" className="nav-link">
+                    <a className="nav-link ">
                       <i className="far fa-circle nav-icon" />
                       <p>Account Overview</p>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/compose.html" className="nav-link">
+                    <Link to="/admin/make-salary"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Make Payment</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <a  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Add Invoice</p>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/all-invoice"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>All Invoice</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/unpaid-invoice" className="nav-link">
                       <i className="far fa-circle nav-icon" />
-                      <p>Unpaid Parcel</p>
-                    </a>
+                      <p>Unpaid Invoice</p>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/paid-invoice" className="nav-link">
                       <i className="far fa-circle nav-icon" />
-                      <p>Paid Parcel</p>
-                    </a>
+                      <p>Paid Invoice</p>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/make-salary" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Payment History</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/income" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Income</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/Expenses"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Expenses</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/mailbox/read-mail.html" className="nav-link">
+                    <Link to="/admin/make-salary"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Make Salary</p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item has-treeview">
+              {/* <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
                   <i className="nav-icon fas fa-book" />
                   <p>
@@ -397,7 +369,7 @@ const AdminMenu = () => {
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
@@ -409,16 +381,16 @@ const AdminMenu = () => {
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <a href="pages/examples/login.html" className="nav-link">
+                    <Link to="/admin/add-coupon" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Add Coupon</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/examples/register.html" className="nav-link">
+                    <Link to="/admin/all-coupon" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>All Coupon</p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -457,6 +429,12 @@ const AdminMenu = () => {
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
+                    <Link to="/admin/delivery-area" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Delivery Area</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
                     <Link to="/admin/charge-list" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Charge List</p>
@@ -493,23 +471,18 @@ const AdminMenu = () => {
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <a href="pages/examples/login.html" className="nav-link">
+                    <Link to="/admin/add-notice" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Add Notice</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="pages/examples/register.html" className="nav-link">
+                    <Link to="/admin/all-notice" className="nav-link">
                       <i className="far fa-circle nav-icon" />
-                      <p>Today Notice</p>
-                    </a>
+                      <p>All Notice</p>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a href="pages/examples/register.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>Add Notice</p>
-                    </a>
-                  </li>
+                 
                 </ul>
               </li>
               <li className="nav-item has-treeview">

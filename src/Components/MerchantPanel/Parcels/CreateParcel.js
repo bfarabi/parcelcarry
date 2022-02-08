@@ -75,6 +75,7 @@ const CreateParcel = () => {
             <div className="row  ">
               <div className="col-md-8 p-3">
                 <h4>কাস্টমার ইনফর্মেশন</h4>
+
                 <div class="row g-2 my-4 w-100">
                   <div class="col-md">
                     <div class="form-floating ">
@@ -226,6 +227,7 @@ const CreateParcel = () => {
                         rows="4"
                       ></textarea>
                     </div>
+
                     <div class="p-3">
                       <input
                         type="checkbox"
@@ -247,11 +249,12 @@ const CreateParcel = () => {
                   <button class="btn btn-outline-danger px-5" type="submit">
                     Cancel
                   </button>
-                  <Link to="/invoice" class="btn btn-danger px-5" >
+                  <a href="/invoice" class="btn btn-danger px-5" >
                     Submit
-                  </Link>
+                  </a>
                 </div>
               </div>
+              
 
               <div className="col-md-4 bg-light p-4 ">
                 <h4>Parcel Carry</h4>

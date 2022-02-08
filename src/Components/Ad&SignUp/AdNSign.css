@@ -26,6 +26,9 @@ input::-webkit-inner-spin-button {
     font-weight: 800;
     font-size: 3rem;
 }
+.adtext{
+    top: 5rem;
+}
 .banner-text-small{
     position: absolute;
     top: 60%;

@@ -53,7 +53,7 @@ const WeightList = () => {
                       <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">SL#</th>
+                            <th scope="col">#SL</th>
                             <th scope="col">Weight List</th>
                             
                             <th scope="col">Action</th>

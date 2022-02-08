@@ -1,4 +1,5 @@
 import React from "react";
+import AdminFooter from "../AdminFooter";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
 
@@ -32,6 +33,7 @@ const DeliveryMen = () => {
           {/* /.container-fluid */}
         </div>
       </div>
+      <AdminFooter></AdminFooter>
     </div>
   );
 };

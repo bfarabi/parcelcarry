@@ -1,6 +1,7 @@
 import React from "react";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from "./../AdminFooter";
 
 const EditAllmerch = () => {
   return (
@@ -94,17 +95,6 @@ const EditAllmerch = () => {
                     <option value="3">Three</option>
                   </select>
                 </div>
-                <div class="col-md-6">
-                  <select
-                    class="form-select form-select-md"
-                    aria-label=".form-select-md example"
-                  >
-                    <option selected>Main Branch</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
 
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -116,6 +106,18 @@ const EditAllmerch = () => {
                       value="+01836288648"
                     />
                     <label for="floatingInputGrid">Contact No</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInputGrid"
+                      placeholder="name@example.com"
+                      value="name@example.com"
+                    />
+                    <label for="floatingInputGrid">Email</label>
                   </div>
                 </div>
 
@@ -156,11 +158,10 @@ const EditAllmerch = () => {
                   </div>
                 </div>
                 <div class="col-md-6 mt-0">
-                <label for="basic-url" className="mb-0">
+                  <label for="basic-url" className="mb-0">
                     Image
-                  </label> 
+                  </label>
                   <div class="input-group">
-                  
                     <input
                       type="file"
                       class="form-control"
@@ -177,17 +178,126 @@ const EditAllmerch = () => {
                     </button>
                   </div>
                 </div>
+                
+
                 <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInputGrid"
-                      placeholder="name@example.com"
-                      value="name@example.com"
-                    />
-                    <label for="floatingInputGrid">Email</label>
-                  </div>
+                  <select
+                    class="form-select form-select-md mt-3"
+                    aria-label=".form-select-md example"
+                  >
+                    <option selected>Status</option>
+                    <option value="1">Active</option>
+                    <option value="2">Pending</option>
+                    <option value="3">Rejected</option>
+                  </select>
+                </div>
+
+                <div className="col-md-4">
+                  <label htmlFor="bank_account_name">Bank Account Name</label>
+                  <input
+                    type="text"
+                    name="bank_account_name"
+                    id="bank_account_name"
+                    className="form-control"
+                    placeholder="Bank Account Name"
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label htmlFor="bank_account_no">Bank Account Number</label>
+                  <input
+                    type="text"
+                    name="bank_account_no"
+                    id="bank_account_no"
+                    className="form-control"
+                    placeholder="Bank Account Number"
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label htmlFor="bank_account_no">Bank Name</label>
+                  <input
+                    type="text"
+                    name="bank_account_no"
+                    id="bank_account_no"
+                    className="form-control"
+                    placeholder="Bank Name"
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label htmlFor="bank_account_no">Bkash Number</label>
+                  <input
+                    type="text"
+                    name="bank_account_no"
+                    id="bank_account_no"
+                    className="form-control"
+                    placeholder="Bkash Number"
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label htmlFor="bank_account_no">Rocket Number</label>
+                  <input
+                    type="text"
+                    name="bank_account_no"
+                    id="bank_account_no"
+                    className="form-control"
+                    placeholder=" Number"
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label htmlFor="bank_account_no">Nagad Number</label>
+                  <input
+                    type="text"
+                    name="bank_account_no"
+                    id="bank_account_no"
+                    className="form-control"
+                    placeholder=" Number"
+                  />
+                </div>
+
+                <div className="col-md-4">
+                  <label htmlFor="nid_card"> NID Card</label>
+                  <input
+                    type="file"
+                    name="nid_card"
+                    id="nid_card"
+                    className="form-control"
+                    accept="image/*"
+                    onchange="return filePreview(this, 'preview_file_nid_card')"
+                  />
+                  <div
+                    id="preview_file_nid_card"
+                    style={{ marginTop: 10 }}
+                  ></div>
+                </div>
+
+                <div className="col-md-4">
+                  <label htmlFor="trade_license">Trade License</label>
+                  <input
+                    type="file"
+                    name="trade_license"
+                    id="trade_license"
+                    className="form-control"
+                    accept="image/*"
+                    onchange="return filePreview(this, 'preview_file_trade_license')"
+                  />
+                  <div
+                    id="preview_file_trade_license"
+                    style={{ marginTop: 10 }}
+                  ></div>
+                </div>
+                <div className="col-md-4">
+                  <label htmlFor="trade_license">TIN Certificate</label>
+                  <input
+                    type="file"
+                    name="trade_license"
+                    id="trade_license"
+                    className="form-control"
+                    accept="image/*"
+                    onchange="return filePreview(this, 'preview_file_trade_license')"
+                  />
+                  <div
+                    id="preview_file_trade_license"
+                    style={{ marginTop: 10 }}
+                  ></div>
                 </div>
 
                 <div className="text-center ">
@@ -205,6 +315,7 @@ const EditAllmerch = () => {
           </div>
         </div>
       </div>
+      <AdminFooter></AdminFooter>
     </div>
   );
 };

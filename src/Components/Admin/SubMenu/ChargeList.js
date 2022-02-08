@@ -1,6 +1,7 @@
 import React from "react";
 import AdminHeader from "../AdminHeader";
 import AdminMenu from "../AdminMenu";
+import AdminFooter from '../AdminFooter';
 
 const ChargeList = () => {
   return (
@@ -66,7 +67,7 @@ const ChargeList = () => {
                       <table class="table">
                       <tbody>
                           <tr>
-                            <th scope="col">SL#</th>
+                            <th scope="col">#SL</th>
                             <th scope="col">Charge/District Name</th>
                             <th scope="col">Charge Rate</th>
                             <th scope="col">Action</th>
@@ -101,6 +102,7 @@ const ChargeList = () => {
           </div>
         </section>
       </div>
+      <AdminFooter></AdminFooter>
     </>
   );
 };
