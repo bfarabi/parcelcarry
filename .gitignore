@@ -4,9 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
-/src
 
-/public/dist
+
+
+
 /public/plugins
 
 
