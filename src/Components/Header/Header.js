@@ -49,17 +49,18 @@ const Header = () => {
                 >
                   <img
                     class="phone-icon"
+                    style={{color:'#363A86'}}
                     src="https://redx.com.bd/images/revamp/phone-icon.svg"
                     alt=""
                   />
                   <p>
-                    কল করুন <span class="text-danger">+8801320-990096 </span>
+                    কল করুন <span class="" style={{color:'#363A86'}} >+8801320-990096 </span>
                   </p>
                 </a>
               </li>
               <li class="nav-item">
                 <div class="loginBtn p-2">
-                  <Link class="btn btn-outline-danger mt-2 fw-bold" to="/login">LOGIN</Link>
+                  <Link class="btn btn-danger mt-2 fw-bold" to="/login">LOGIN</Link>
                 </div>
               </li>
               {/* <li class="nav-item">

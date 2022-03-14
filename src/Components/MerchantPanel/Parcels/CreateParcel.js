@@ -23,7 +23,7 @@ const CreateParcel = () => {
         <ul class="nav nav-pills mb-4 p-3" id="pills-tab" role="tablist">
           <li class="nav-item " role="presentation">
             <button
-              class="nav-link active btn btn-outline-danger "
+              class="nav-link active btn "
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -37,7 +37,7 @@ const CreateParcel = () => {
           </li>
           <li class="nav-item mx-2" role="presentation">
             <button
-              class="nav-link btn btn-outline-danger"
+              class="nav-link btn "
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"
@@ -51,7 +51,7 @@ const CreateParcel = () => {
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link btn btn-outline-danger"
+              class="nav-link btn "
               id="pills-import-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-import"
@@ -246,7 +246,7 @@ const CreateParcel = () => {
                   </div>
                 </div>
                 <div class="d-flex justify-content-between px-5">
-                  <button class="btn btn-outline-danger px-5" type="submit">
+                  <button class="btn btn-danger px-5" type="submit">
                     Cancel
                   </button>
                   <a href="/invoice" class="btn btn-danger px-5" >
@@ -312,7 +312,7 @@ const CreateParcel = () => {
                 </form>
                 
                 <div class="d-flex justify-content-between py-5 px-5">
-                  <button class="btn btn-outline-danger px-5" type="submit">
+                  <button class="btn btn-danger px-5" type="submit">
                     Cancel
                   </button>
                   <button class="btn btn-danger px-5" type="submit">

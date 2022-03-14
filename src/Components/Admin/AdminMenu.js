@@ -113,6 +113,7 @@ const AdminMenu = () => {
                   </p>
                 </a>
                 <ul className="nav nav-treeview">
+                
                   {/* <li className="nav-item">
                     <a href="pages/charts/chartjs.html" className="nav-link">
                       <i className="far fa-circle nav-icon" />
@@ -128,43 +129,43 @@ const AdminMenu = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/admin/parcel-list" className="nav-link">
+                    <Link to="/admin/pending-parcel" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Pending Parcel List</p>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/admin/parcel-list" className="nav-link">
+                    <Link to="/admin/rejected-parcel" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Rejected Parcel</p>
                     </Link>
                   </li>
 
-                  {/* <li className="nav-item">
-                    <a  className="nav-link">
+                  <li className="nav-item">
+                    <Link to="/admin/parcel-list"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Delivery in Progress</p>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-item">
-                    <a  className="nav-link">
+                    <Link to="/admin/parcel-list"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Delivered</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a  className="nav-link">
+                    <Link to="/admin/parcel-list"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Hold</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a  className="nav-link">
+                  <Link to="/admin/parcel-list"  className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Returning </p>
-                    </a>
-                  </li> */}
+                    </Link>
+                  </li>
                 </ul>
               </li>
 

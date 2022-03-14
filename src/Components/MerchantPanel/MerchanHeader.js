@@ -28,13 +28,13 @@ const MerchanHeader = () => {
             <div class="collapse navbar-collapse " id="navbarText">
               <ul class="navbar-nav  mb-lg-0">
                 <li class="nav-item">
-                  <Link
+                  {/* <Link
                     class="nav-link active text-danger fw-bold"
                     aria-current="page"
                     to="/"
                   >
                     Track Parcel
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
               <ul class="navbar-nav d-flex justify-content-end align-items-center pt-2">
@@ -69,7 +69,7 @@ const MerchanHeader = () => {
                 </li>
                 <li class="nav-item ">
                   <div class="">
-                    <Link class="btn btn-outline-danger  fw-bold" to="/create">
+                    <Link class="btn btn-danger  fw-bold" to="/create">
                       Create Parcel
                     </Link>
                   </div>

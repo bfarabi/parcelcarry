@@ -21,7 +21,7 @@ const Dashboard = () => {
           আজই এপ্লাই করুন। বিস্তারিত এখানে &#8594;{" "}
           <span>
             {" "}
-            <button type="submit" class="btn btn-success">
+            <button type="submit" class="btn btn-danger">
               {" "}
               Apply Now
             </button>{" "}

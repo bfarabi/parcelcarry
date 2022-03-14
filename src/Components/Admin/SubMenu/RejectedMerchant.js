@@ -54,7 +54,7 @@ const RejectedMerchant = () => {
               </div>
 
               <div className="w-100 justify-content-center   ">
-                <table class="table table-bordered table-responsive">
+                <table class="table table-bordered table-responsive-lg">
                   <tbody>
                     <tr className="App bg-light ">
                     <td>
@@ -73,11 +73,11 @@ const RejectedMerchant = () => {
                       <td>Shop Name</td>
                       <td>Account type</td>
                       <td>Phone</td>
-                      <td>Email</td>
+                     
                       <td>Product type</td>
                       <td>Shop Address</td>
                       <td>Pickup Area</td>
-                      <td>FB/web URL</td>
+                      
                       <td>Status</td>
                       <td>Action</td>
                     </tr>
@@ -99,12 +99,11 @@ const RejectedMerchant = () => {
                       <td>Parcel carry</td>
                       <td>00</td>
                       <td>01626262626</td>
-                      <td>ParcelCarry@gmail.com</td>
                       
                       <td>00</td>
                       <td>Banani</td>
                       <td>banani</td>
-                      <td>www.facebook.com</td>
+                      
                       <td>Active</td>
                       <td className="d-flex">
                       <Link to="/admin/edit-all-merchant"><i class="bi bi-pencil-square m-1"></i></Link>

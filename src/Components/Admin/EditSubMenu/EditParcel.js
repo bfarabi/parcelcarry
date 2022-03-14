@@ -158,6 +158,20 @@ const EditParcel = () => {
                       </label>
                     </div>
                   </div>
+                  <div class="col-md-6 py-1">
+                <label for="basic-url" className="mb-0">
+                    STATUS
+                  </label>
+                  <select
+                    class="form-select form-select-lg "
+                    aria-label=".form-select-md example"
+                  >
+                    
+                    <option value="1">Active</option>
+                    <option selected value="2">Pending</option>
+                    <option value="3">Rejected</option>
+                  </select>
+                </div>
 
                   
                 </div>
@@ -165,7 +179,7 @@ const EditParcel = () => {
                 
                 <div className="text-center ">
                   <button type="submit" className="btn btn-success fw-bold">
-                    Update
+                    Submit
                   </button>
                   <button type="reset" className="btn btn-warning ms-1">
                     Reset

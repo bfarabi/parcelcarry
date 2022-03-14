@@ -23,7 +23,7 @@ const EditAllmerch = () => {
                       placeholder="name@example.com"
                       value="Payra Soft"
                     />
-                    <label for="floatingInputGrid">Company Name</label>
+                    <label for="floatingInputGrid">Shop Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -35,7 +35,7 @@ const EditAllmerch = () => {
                       placeholder="name@example.com"
                       value="Payra"
                     />
-                    <label for="floatingInputGrid"> Name</label>
+                    <label for="floatingInputGrid">Merchant Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -169,36 +169,20 @@ const EditAllmerch = () => {
                       aria-describedby="inputGroupFileAddon04"
                       aria-label="Upload"
                     />
-                    <button
-                      class="btn btn-primary"
-                      type="button"
-                      id="inputGroupFileAddon04"
-                    >
-                      Button
-                    </button>
+                    
                   </div>
                 </div>
                 
 
-                <div class="col-md-6">
-                  <select
-                    class="form-select form-select-md mt-3"
-                    aria-label=".form-select-md example"
-                  >
-                    <option selected>Status</option>
-                    <option value="1">Active</option>
-                    <option value="2">Pending</option>
-                    <option value="3">Rejected</option>
-                  </select>
-                </div>
+                
 
-                <div className="col-md-4">
-                  <label htmlFor="bank_account_name">Bank Account Name</label>
+                <div className="col-md-6 mt-0">
+                  <label className="mb-0" htmlFor="bank_account_name">Bank Account Name</label>
                   <input
                     type="text"
                     name="bank_account_name"
                     id="bank_account_name"
-                    className="form-control"
+                    className="form-control mt-0"
                     placeholder="Bank Account Name"
                   />
                 </div>
@@ -299,10 +283,25 @@ const EditAllmerch = () => {
                     style={{ marginTop: 10 }}
                   ></div>
                 </div>
+                <div class="col-md-6">
+                <label for="basic-url" className="mb-0">
+                    STATUS
+                  </label>
+                  <select
+                    class="form-select form-select-md "
+                    aria-label=".form-select-md example"
+                  >
+                    
+                    <option value="1">Active</option>
+                    <option selected value="2">Pending</option>
+                    <option value="3">Rejected</option>
+                  </select>
+                </div>
+
 
                 <div className="text-center ">
                   <button type="submit" className="btn btn-success fw-bold">
-                    Update
+                    Submit
                   </button>
                   <button type="reset" className="btn btn-warning ms-1">
                     Reset

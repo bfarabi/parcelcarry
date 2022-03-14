@@ -1,5 +1,6 @@
 import React from 'react';
 import MerchanHeader from '../MerchanHeader';
+import { Link } from 'react-router-dom';
 
 const MyShop = () => {
     return (
@@ -12,10 +13,12 @@ const MyShop = () => {
 
                 <div className="row">
                 <div className="col-md-3 App   ">
+                <Link to="/add-my-shop" className="text-decoration-none">
                 <div className=" p-5 m-1 border rounded bg-light ">
                 <img className="mb-2 " src="https://redx.com.bd/images/add.svg" alt="" />
                     <h4 className="text-danger">একটি নতুন শপ যুক্ত করুন</h4>
                 </div>
+                </Link>
                 </div>
                 <div className="col-md-3 ">
                 <div className=" p-5 m-1 border rounded ">

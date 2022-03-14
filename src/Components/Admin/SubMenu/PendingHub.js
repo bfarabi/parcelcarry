@@ -110,10 +110,15 @@ const PendingHub = () => {
                       
                       <td>Pending</td>
                       <td className="d-flex" >
-                      <Link to="/admin/edit-view"><i class="bi bi-pencil-square text-warning m-1"></i></Link>
-                        
-                        <Link to="/admin/hub-view"> <i class="fas fa-eye text-primary m-1"></i></Link>
-                        <i class="bi bi-trash text-danger m-1"></i>
+                      <Link to="/admin/edit-view"><p class=" m-1 bg-primary p-2 fw-bold rounded">Confirm</p></Link>
+                       {/* <Link to="/admin/hub-view"> <i class="fas fa-eye text-primary m-1"></i></Link> */}
+                        <p
+                          onClick={() => alert("Are you confirm to Delete?")}
+                          class=" m-1 bg-danger p-2 fw-bold rounded"
+                        >
+                          {" "}
+                          Delete
+                        </p>
                       </td>
                     </tr>
                   </tbody>

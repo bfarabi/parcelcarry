@@ -55,7 +55,7 @@ const PendingMan = () => {
               </div>
 
               <div className="w-100 justify-content-center   ">
-                <table class="table table-bordered table-responsive">
+                <table class="table table-bordered table-responsive-lg">
                   <tbody>
                     <tr className="App bg-light ">
                       <td>
@@ -101,7 +101,7 @@ const PendingMan = () => {
                       <td>3231</td>
                       <td>
                       <img
-                          className=" w-100 profile-user-img img-fluid img-circle"
+                          className=" w-50 profile-user-img img-fluid img-circle"
                           src={MalePhoto}
                           alt
                         />

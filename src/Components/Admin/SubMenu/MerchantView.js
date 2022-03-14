@@ -14,18 +14,19 @@ const MerchantView = () => {
           <div className="row p-3">
 
             <div className="col-md-3 ">
-              <div className=" bg-white p-3 m-1">
+              <div className=" bg-white p-3 m-1 h-100">
                 <h5 className="fw-bold pb-0 mb-0">Billal Farabi</h5>
                 <p className="">
                   Dietrich PLC <br />
-                  last login at ...
+                  last login at ... <br />
+                  Joining date
                 </p>
               </div>
             </div>
 
             <div className="col-md-3  ">
-              <div className=" row bg-white p-3 m-1 ">
-                <div className="col">
+              <div className=" row bg-white p-3 m-1 h-100">
+                <div className="col ">
                   <h5 className="fw-bold">Total Parcel</h5>
                   <i className="nav-icon fas fa-copy fs-5" />
                   
@@ -37,7 +38,7 @@ const MerchantView = () => {
               </div>
             </div>
             <div className="col-md-3  ">
-              <div className=" row bg-white p-3 m-1">
+              <div className=" row bg-white p-3 m-1 h-100">
                 <div className="col">
                   <h5 className="fw-bold">Total Sales</h5>
                   <i className="nav-icon fas fa-copy fs-5" />
@@ -50,7 +51,7 @@ const MerchantView = () => {
               </div>
             </div>
             <div className="col-md-3  ">
-              <div className=" row bg-white p-3  m-1">
+              <div className=" row bg-white p-3  m-1 h-100">
                 <div className="col">
                   <h5 className="fw-bold">Due Invoice</h5>
                   <i className="nav-icon fas fa-copy fs-5" />
@@ -70,6 +71,12 @@ const MerchantView = () => {
             <h4 className="p-3 fw-bold"> Profile info</h4>
                   <tbody>
                     <tr className="  ">
+                      
+                    <td>Image</td>
+                      <td>...</td>
+                     </tr>
+                    <tr className="  ">
+                      
                       <td>Full Name</td>
                       <td>Billal Farabi</td>
                      </tr>

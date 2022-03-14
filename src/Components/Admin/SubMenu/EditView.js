@@ -5,7 +5,7 @@ import AdminFooter from "./../AdminFooter";
 
 const EditView = () => {
     return (
-        <div class="wrapper">
+      <div class="wrapper">
       <AdminHeader></AdminHeader>
       <AdminMenu></AdminMenu>
       <div className="content-wrapper">
@@ -13,7 +13,7 @@ const EditView = () => {
           <div className="container-fluid">
             <div className="card-body  ">
               <div class="row g-2">
-                <h4>Edit View page</h4>
+                <h4>Edit Page</h4>
                 <div class="col-md-6">
                   <div class="form-floating">
                     <input
@@ -21,7 +21,7 @@ const EditView = () => {
                       class="form-control"
                       id="floatingInputGrid "
                       placeholder="name@example.com"
-                      value=""
+                      value="Payra Soft"
                     />
                     <label for="floatingInputGrid">Company Name</label>
                   </div>
@@ -33,7 +33,7 @@ const EditView = () => {
                       class="form-control"
                       id="floatingInputGrid "
                       placeholder="name@example.com"
-                      value=""
+                      value="Payra"
                     />
                     <label for="floatingInputGrid"> Name</label>
                   </div>
@@ -45,7 +45,7 @@ const EditView = () => {
                       class="form-control"
                       id="floatingInputGrid "
                       placeholder="name@example.com"
-                      value=""
+                      value="Dhaka"
                     />
                     <label for="floatingInputGrid"> Full Address</label>
                   </div>
@@ -57,7 +57,7 @@ const EditView = () => {
                       class="form-control"
                       id="floatingInputGrid "
                       placeholder="name@example.com"
-                      value=""
+                      value="Dhaka"
                     />
                     <label for="floatingInputGrid"> Business Address</label>
                   </div>
@@ -180,25 +180,15 @@ const EditView = () => {
                 </div>
                 
 
-                <div class="col-md-6">
-                  <select
-                    class="form-select form-select-md mt-3"
-                    aria-label=".form-select-md example"
-                  >
-                    <option selected>Status</option>
-                    <option value="1">Active</option>
-                    <option value="2">Pending</option>
-                    <option value="3">Rejected</option>
-                  </select>
-                </div>
+                
 
-                <div className="col-md-4">
-                  <label htmlFor="bank_account_name">Bank Account Name</label>
+                <div className="col-md-6 mt-0">
+                  <label className="mb-0" htmlFor="bank_account_name">Bank Account Name</label>
                   <input
                     type="text"
                     name="bank_account_name"
                     id="bank_account_name"
-                    className="form-control"
+                    className="form-control mt-0"
                     placeholder="Bank Account Name"
                   />
                 </div>
@@ -299,10 +289,25 @@ const EditView = () => {
                     style={{ marginTop: 10 }}
                   ></div>
                 </div>
+                <div class="col-md-6">
+                <label for="basic-url" className="mb-0">
+                    STATUS
+                  </label>
+                  <select
+                    class="form-select form-select-md "
+                    aria-label=".form-select-md example"
+                  >
+                    
+                    <option value="1">Active</option>
+                    <option selected value="2">Pending</option>
+                    <option value="3">Rejected</option>
+                  </select>
+                </div>
+
 
                 <div className="text-center ">
                   <button type="submit" className="btn btn-success fw-bold">
-                    Update
+                    Submit
                   </button>
                   <button type="reset" className="btn btn-warning ms-1">
                     Reset

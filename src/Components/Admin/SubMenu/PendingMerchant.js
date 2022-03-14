@@ -54,7 +54,7 @@ const PendingMerchant = () => {
               </div>
 
               <div className="w-100 justify-content-center   ">
-                <table class="table mb-0 table-bordered table-responsive">
+                <table class="table mb-0 table-bordered table-responsive-lg">
                   <tbody>
                     <tr className="App bg-light ">
                     <td>
@@ -73,10 +73,11 @@ const PendingMerchant = () => {
                       <td>Shop Name</td>
                       <td>Account type</td>
                       <td>Phone</td>
-                      <td>Email</td>
+                      
                       <td>Product type</td>
                       <td>Shop Address</td>
                       <td>Pickup Area</td>
+                      <td>Created date</td>
                       
                       <td>Status</td>
                       <td>Action</td>
@@ -99,17 +100,20 @@ const PendingMerchant = () => {
                       <td>Parcel carry</td>
                       <td>00</td>
                       <td>01626262626</td>
-                      <td>ParcelCarry@gmail.com</td>
+                      
                       
                       <td>00</td>
                       <td>Banani</td>
                       <td>banani</td>
                       
-                      <td>Active</td>
+                      <td>11/02/2020 12:30 pm</td>
+                      
+                      <td>Pending</td>
                       <td className="d-flex">
-                      <Link to="/admin/edit-all-merchant"><i class="bi bi-pencil-square m-1"></i></Link>
-                      <Link to='/admin/merchant-view'> <i className="fas fa-eye m-1 " ></i></Link>
-                        <i class="bi bi-trash text-danger m-1"></i>
+                      
+                      <Link to="/admin/edit-all-merchant"><p class=" m-1 bg-primary p-2 fw-bold rounded">Confirm</p></Link>
+                      
+                      <p onClick={()=> alert("Are you confirm to Delete?")} class=" m-1 bg-danger p-2 fw-bold rounded"> Delete</p>
                       </td>
                     </tr>
                     
@@ -117,9 +121,9 @@ const PendingMerchant = () => {
                 </table>
               </div>
             </div>
-            {/* /.row */}
+            
           </div>
-          {/* /.container-fluid */}
+          
         </div>
       </div>
       <AdminFooter></AdminFooter>
