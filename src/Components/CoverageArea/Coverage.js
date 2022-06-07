@@ -1,5 +1,6 @@
 import React from "react";
 import "./Coverage.css";
+import { Link } from 'react-router-dom';
 
 const Coverage = () => {
   return (
@@ -14,18 +15,20 @@ const Coverage = () => {
         </div>
         <div className="col-lg-6 text-left py-4">
           <h1 style={{ fontWeight: "bold", padding: "2rem", color: "white" }}>
-            পার্সেল ক্যারির লজিস্টিকস সেবা সারাদেশে ৬৪ জেলা এবং ৪৯৩ উপজেলা জুড়ে
-            বিস্তৃত
+            Parcel Carry provides logistics support in all 64 districts and 493
+            sub districts across country
           </h1>
           <p style={{ color: "white", padding: "5px" }}>
-            আপনার যেকোনো লজিস্টিকস প্রয়োজনের জন্য আমরা নিশ্চিত করি দেশজুড়ে
-            সবচেয়ে দ্রুতগতির সেবা
+          Whatever your logistics need, we guarantee the fastest service all over the country
           </p>
+          <Link to="/coverage-map">
           <button type="button" class="btn btn-danger px-5 py-3 my-5 ">
-            কাভারেজ এলাকা দেখুন
+            Check our coverage area
           </button>
+          </Link>
         </div>
       </div>
+      
 
       {/* calculator area start */}
 
@@ -33,7 +36,7 @@ const Coverage = () => {
         <form action="">
           <div className="row calculator-area px-2">
             <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
-              ডেলিভারি ক্যালকুলেটর
+              Delivery calculator
             </h1>
             <p>
               আপনার শিপমেন্টের সুবিধার জন্য আগে থেকেই আপনার ডেলিভারী চার্জ

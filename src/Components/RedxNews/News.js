@@ -21,7 +21,7 @@ const News = () => {
       </div>
 
       <div className="row my-4">
-        <h1 class="">মিডিয়াতে পার্সেল ক্যারি</h1>
+        <h1 class="">Parcel carry in the news</h1>
       </div>
       <div className="row my-3 d-flex justify-content-center">
         <SingleNews></SingleNews>

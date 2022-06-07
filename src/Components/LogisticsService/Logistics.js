@@ -6,7 +6,7 @@ const Logistics = () => {
   return (
     <div className="container">
       <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
-        আপনার লজিস্টিক পার্টনার হিসেবে PARCEL CARRY বেছে নিন
+      Choose PARCEL CARRY as your logistics partner 
       </h1>
       <div className="row p-5">
         <SingleLogics></SingleLogics>

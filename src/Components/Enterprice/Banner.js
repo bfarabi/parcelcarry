@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Banner = () => {
     return (
@@ -32,27 +34,14 @@ const Banner = () => {
         <h6 style={{ color: "white" }}>
           বিনামুল্যে সাইন-আপ করুন মাত্র দুই মিনিটে
         </h6>
-        <form action="">
-          <div className="signUp-form-field">
-            <picture class="flag">
-              <source
-                media="(width: 86px, height: 50px)"
-                srcset="https://redx.com.bd/images/bangladesh-flag.png"
-              />
-              <img src="https://redx.com.bd/images/bangladesh-flag.png"></img>
-            </picture>
-            <span class="ext">+880</span>
-            <input
-              name="phone"
-              type="number"
-              placeholder="ফোন নাম্বার"
-              value=""
-            />
-          </div>
-          <button class="signupBtn" type="submit">
+        < >
+        <Link to="/login">
+        <button class="signupBtn" type="submit">
           সাইন-আপ
           </button>
-        </form>
+        </Link>
+          
+        </>
         <div class="or-section">
           <span>
             <p style={{ color: "white" }}>অথবা,</p>

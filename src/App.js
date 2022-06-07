@@ -11,6 +11,7 @@ import {
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Enterprice from './Components/Enterprice/Enterprice';
+// import Map from './Components/Coverage/Map';
 import C2c from './Components/C2C/C2c';
 import Login from './Components/Login/Login';
 import MerchanHeader from './Components/MerchantPanel/MerchanHeader';
@@ -74,6 +75,7 @@ import EditProfile from './Components/Admin/SubMenu/Profile/EditProfile';
 import ViewHub from './Components/Admin/SubMenu/ViewHub';
 import EditView from './Components/Admin/SubMenu/EditView';
 import AddShop from './Components/MerchantPanel/Menu/AddShop';
+import CoverageMap from "./Components/CoverageArea/CoverageMap";
 
 function App() {
   return (
@@ -99,6 +101,7 @@ function App() {
       <Route path="/credit-history" element={<CreditHistory></CreditHistory>} />
       <Route path="/tutorial" element={<Tutorial></Tutorial>} />
       <Route path="/faq" element={<FAQ></FAQ>} />
+      <Route path="/coverage-map" element={<CoverageMap></CoverageMap>} />
 
       <Route path="/admin" element={<AdminHome></AdminHome>} />
       <Route path="/invoice" element={<Invoice></Invoice>} />

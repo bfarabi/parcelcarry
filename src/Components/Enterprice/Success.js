@@ -35,7 +35,7 @@ const Success = () => {
       <div className="row w-100 my-5 ">
         <div className="col-md-8">
           <h1 style={{ fontWeight: "bold", padding: "2rem" }}>
-            আমাদের সাথে যোগাযোগ করুন
+          Get in touch for instant price estimate
           </h1>
 
 
@@ -117,7 +117,7 @@ const Success = () => {
 
             <button type="submit" class="mb-3 btn btn-danger">
               {" "}
-              সাবমিট{" "}
+              Submit{" "}
             </button>
           </form>
         </div>

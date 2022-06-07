@@ -31,12 +31,12 @@ const Header = () => {
             <ul class="navbar-nav  mb-lg-0">
               <li class="nav-item">
                 <Link class="nav-link active text" aria-current="page" to="/enterprise">
-                এন্টারপ্রাইজ
+                Enterprise
                 </Link>
               </li>
               <li class="nav-item">
                 <Link class="nav-link active text" to="/c2c">
-                  সিটুসি
+                  C2C
                 </Link>
               </li>
             </ul>
@@ -54,24 +54,24 @@ const Header = () => {
                     alt=""
                   />
                   <p>
-                    কল করুন <span class="" style={{color:'#363A86'}} >+8801320-990096 </span>
+                    Call Us <span class="" style={{color:'#363A86'}} >+8801320-990096 </span>
                   </p>
                 </a>
               </li>
               <li class="nav-item">
-                <div class="loginBtn p-2">
+                <div class="loginBtn p-3">
                   <Link class="btn btn-danger mt-2 fw-bold" to="/login">LOGIN</Link>
                 </div>
               </li>
-              {/* <li class="nav-item">
-                <div class="languageBtn  p-3 ">
-                  <img
-                    src="https://redx.com.bd/images/revamp/language.svg"
-                    alt=""
-                  />
-                  <p>BN</p>
+              
+              <li class="nav-item">
+                <div class="languageBtn   p-3 ">
+                 
+                  <Link class="nav-link active text" to="/dashboard">
+                  <button type="button" class="btn btn-primary fw-bold">Dashboard</button>
+                </Link>
                 </div>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
